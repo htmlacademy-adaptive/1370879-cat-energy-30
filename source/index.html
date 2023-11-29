@@ -8,16 +8,81 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <nav class="header__nav site-navigation">
+        <a class="site-navigation__logo" href="#">
+          <img class="site-navigation__logo-image" src="" alt="">
+        </a>
+
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--current" href="#">главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">каталог продукции</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="page__main">
-      <section>
-        <h2></h2>
+      <h1 class="visually-hidden">Главная страница</h1>
+      <section class="promo">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img src="images/promo-image.png" width="280" height="270" alt="В фокусе изображение спортивного питания для котов">
+        <a href="#" class="promo__link button">подобрать программу</a>
+      </section>
+
+      <section class="product">
+        <h2 class="visually-hidden">Секция наименования продуктов</h2>
+
+      </section>
+
+      <section class="examples">
+        <h2 class="examples__title">Как это работает</h2>
+
+
+      </section>
+
+      <section class="result">
+        <h2 class="result__title">Живой пример</h2>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="" alt="">
+      </a>
 
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img src="" alt="">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img src="" alt="">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img src="" alt="">
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer__copyright" href="#">
+        <img src="" alt="">
+      </a>
     </footer>
 
   </body>
