@@ -40,9 +40,39 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
 
-      <form class="form__form-content form-content" action="#"></form>
+      <form class="form__form-content form-content" action="#">
 
-      <section class="contacts contacts--secondary">
+        <fieldset class="form-content__field">
+          <legend class="visually-hidden">Параметры питомца</legend>
+        </fieldset>
+
+        <fieldset class="form-content__field">
+          <legend class="form-content__legend">Контактные данные(владельца кота)</legend>
+        </fieldset>
+
+        <fieldset class="form-content__field">
+          <legend class="form-content__legend">Комментарий</legend>
+        </fieldset>
+
+        <fieldset class="form-content__field">
+          <legend class="form-content__legend">Дополнительно</legend>
+        </fieldset>
+
+
+
+        <div class="form-content__bottom">
+          <button class="form-content__button button">отправить заявку</button>
+          <p class="form-content__slogan">
+            <small>
+              * — Обязательные поля
+            </small>
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="contacts contacts--secondary">
         <h2 class="visually-hidden">Контакты</h2>
 
         <div class="contacts__col-text">
@@ -58,10 +88,8 @@
           <img class="map__image" src="images/map.jpg" width="320" height="362"
             alt="Карта с указанием положения магазина на ней">
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer class="footer">
       <a class="footer__logo" href="#" aria-label="social-link">
         <img
           src="images/footer-logo.svg"
@@ -73,17 +101,17 @@
 
       <ul class="socials">
         <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="social-link">
+          <a class="socials__link social-link--vk" href="#" aria-label="social-link">
             <!-- <img src="" alt=""> -->
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="social-link">
+          <a class="socials__link social-link--youtube" href="#" aria-label="social-link">
             <!-- <img src="" alt=""> -->
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="social-link">
+          <a class="socials__link social-link--telegram" href="#" aria-label="social-link">
             <!-- <img src="" alt=""> -->
           </a>
         </li>
