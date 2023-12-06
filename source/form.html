@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница подбора программы</title>
+  </head>
+  <body class="page__body">
+    <header class="page__main-header main-header">
+      <a class="main-header__logo" href="index.html">
+        <img
+          class="main-header__logo-image"
+          src="images/logo-tablet.svg"
+          width="174"
+          height="50"
+          alt="Кэт Энержи"
+        />
+      </a>
+      <nav class="main-header__nav site-navigation">
+        <button class="site-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="index.html">главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--current">
+            <a class="site-navigation__link" href="#">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__form form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__slogan">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+
+      <form class="form__form-content form-content" action="#">
+
+        <fieldset class="form-content__field parameters">
+          <legend class="visually-hidden">Параметры питомца</legend>
+
+          <div class="parameters__wrapper">
+            <label class="parameters__label" for="name">ИМЯ: <sup>*</sup></label>
+            <input class="parameters__input input" name="name" type="text" id="name" placeholder="барсик">
+          </div>
+
+          <div class="parameters__wrapper">
+            <label class="parameters__label" for="weight">Вес (кг): <sup>*</sup></label>
+            <input class="parameters__input input" name="weight" type="text" id="weight" placeholder="7">
+          </div>
+
+          <div class="parameters__wrapper">
+            <label class="parameters__label" for="age">Возраст (лет): <sup>*</sup></label>
+            <input class="parameters__input input" name="age" type="text" id="age" placeholder="7">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-content__field programm">
+          <legend class="visually-hidden">Параметры питомца</legend>
+
+          <div class="programm__wrapper">
+            <label class="programm__label" for="weight-down">похудение</label>
+            <input class="programm__checkbox checkbox" name="weight-down" type="checkbox" id="weight-down">
+          </div>
+
+          <div class="programm__wrapper">
+            <label class="programm__label" for="weight-up">Набор массы</label>
+            <input class="programm__checkbox checkbox" name="weight-up" type="checkbox" id="weight-up">
+          </div>
+
+          <div class="programm__wrapper">
+            <label class="programm__label" for="no-answer">Не знаю (Нужен ваш совет)</label>
+            <input class="programm__checkbox checkbox" name="no-answer" type="checkbox" id="no-answer">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-content__field contacts-data">
+          <legend class="form-content__legend">Контактные данные(владельца кота)</legend>
+
+          <div class="contacts-data__wrapper">
+            <label class="contacts-data__label" for="email">E-mail: <sup>*</sup></label>
+            <input class="contacts-data__input input input--email" name="email" type="checkbox" id="email">
+          </div>
+
+          <div class="contacts-data__wrapper">
+            <label class="contacts-data__label" for="phone">Телефон: <sup>*</sup></label>
+            <input class="contacts-data__input input input--phone" name="phone" type="checkbox" id="phone">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-content__field comments">
+          <legend class="form-content__legend">Комментарий</legend>
+
+          <label class="visually-hidden" for="comments">Поле для коментариев</label>
+          <textarea class="comments__textarea" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="form-content__field additional">
+          <legend class="form-content__legend">Дополнительно</legend>
+
+          <div class="additional__wrapper">
+            <label class="additional__label" for="no-sugar">сахарозаменитель</label>
+            <input class="additional__checkbox checkbox" name="no-sugar" type="checkbox" id="no-sugar">
+          </div>
+
+          <div class="additional__wrapper">
+            <label class="additional__label" for="water">питьевая вода</label>
+            <input class="additional__checkbox checkbox" name="water" type="checkbox" id="water">
+          </div>
+
+          <div class="additional__wrapper">
+            <label class="additional__label" for="milk">молоко</label>
+            <input class="additional__checkbox checkbox" name="milk" type="checkbox" id="milk">
+          </div>
+
+          <div class="additional__wrapper">
+            <label class="additional__label" for="vitamins">витамины</label>
+            <input class="additional__checkbox checkbox" name="vitamins" type="checkbox" id="vitamins">
+          </div>
+        </fieldset>
+
+        <div class="form-content__bottom">
+          <button class="form-content__button button" type="button">отправить заявку</button>
+          <p class="form-content__slogan">
+            <small>
+              * — Обязательные поля
+            </small>
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="contacts contacts--secondary">
+        <h2 class="visually-hidden">Контакты</h2>
+
+        <div class="contacts__col-text">
+          <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+
+        <div class="contacts__col-map map">
+          <img class="map__image" src="images/map.jpg" width="320" height="362"
+            alt="Карта с указанием положения магазина на ней">
+        </div>
+      </div>
+
+      <a class="footer__logo" href="#" aria-label="social-link">
+        <img
+          src="images/footer-logo.svg"
+          width="128"
+          height="24"
+          alt="Кэт Энержи"
+        />
+      </a>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="#" aria-label="social-link">
+            <!-- <img src="" alt=""> -->
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#" aria-label="social-link">
+            <!-- <img src="" alt=""> -->
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="#" aria-label="social-link">
+            <!-- <img src="" alt=""> -->
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer__copyright" href="#" aria-label="to-home-page">
+        <!-- <img src="" alt=""> -->
+      </a>
+    </footer>
+  </body>
+</html>
