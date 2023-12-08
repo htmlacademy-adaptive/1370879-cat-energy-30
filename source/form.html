@@ -8,7 +8,10 @@
   <body class="page__body">
     <header class="page__main-header main-header">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__icon" src="images/logo-tablet.svg" width="174" height="50" alt="Кэт Энержи">
+        <picture>
+          <source media="(min-width: 768px)" type="image/svg" srcset="images/logo-tablet.svg" width="174" height="50">
+          <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Кэт Энержи">
+        </picture>
       </a>
       <nav class="main-header__nav site-navigation">
         <button class="site-navigation__toggle" type="button">
@@ -171,7 +174,7 @@
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--telegram" href="#" aria-label="social-link">
-            <img src="images/telegram.svg" width="" height="" alt="Логотип Telegram">
+            <img src="images/telegram.svg" width="20" height="17" alt="Логотип Telegram">
           </a>
         </li>
       </ul>
