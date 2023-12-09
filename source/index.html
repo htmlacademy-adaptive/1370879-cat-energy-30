@@ -11,7 +11,7 @@
     <header class="page__main-header main-header">
       <a class="main-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 768px)" type="image/svg" srcset="images/logo-tablet.svg" width="174" height="50">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="174" height="50">
           <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Кэт Энержи">
         </picture>
       </a>
@@ -39,7 +39,11 @@
       <section class="promo">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img src="images/promo-image.png" width="280" height="270" alt="В фокусе изображение спортивного питания для котов">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/promo-image-desktop@1x.png 1x" srcset="images/promo-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" type="image/png" srcset="images/promo-image-tablet@1x.png 1x" srcset="images/promo-image-tablet@2x.png 2x">
+          <img src="images/promo-image@1x.png" srcset="images/promo-image@2x.png 2x" width="280" height="270" alt="В фокусе изображение спортивного питания для котов">
+        </picture>
         <a class="promo__link button" href="#">подобрать программу</a>
       </section>
 
@@ -66,7 +70,6 @@
             </article>
           </li>
         </ul>
-
       </section>
 
       <section class="examples">
@@ -125,7 +128,9 @@
         </dl>
 
         <div class="example__carousel carousel">
-          <img class="carousel__image" src="images/slides.png" width="280" height="256" alt="Изображение кота в состоянии до и после скидывание веса">
+          <picture>
+            <img class="carousel__image" src="images/slides@1x.png 1x" srcset="images/slides@2x.png 2x" width="280" height="256" alt="Изображение кота в состоянии до и после скидывание веса">
+          </picture>
           <div class="carousel__control control">
             <div class="control"></div>
           </div>
