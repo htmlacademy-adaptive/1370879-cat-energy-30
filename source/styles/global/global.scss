@@ -1,7 +1,11 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+@import "./variables.scss";
+
 body {
   margin: 0;
+  padding: 0;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
+  background-color: red;
 }
