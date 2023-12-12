@@ -1,3 +1,32 @@
 .site-navigation {
   background-color: tomato;
 }
+
+.site-navigation__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  background-image: url("../../images/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation__link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $primary-text-color;
+}
