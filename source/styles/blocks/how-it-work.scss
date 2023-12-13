@@ -1,0 +1,20 @@
+.how-it-work {
+  background-color: tomato;
+
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+    color: $primary-text-color;
+  }
+
+  &__list {
+    @include clear-list;
+  }
+
+  &__text {
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
+}

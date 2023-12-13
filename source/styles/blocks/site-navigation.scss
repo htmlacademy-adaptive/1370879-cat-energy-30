@@ -17,9 +17,7 @@
 }
 
 .site-navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include clear-list;
 }
 
 .site-navigation__link {
