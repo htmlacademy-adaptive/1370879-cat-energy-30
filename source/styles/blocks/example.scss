@@ -8,9 +8,17 @@
   }
 
   &__description {
+    margin: 0;
     font-family: $secondary-font;
     font-size: 14px;
     line-height: 18px;
     color: $special-dark-grey;
+  }
+
+  &__expenses {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $primary-text-color;
   }
 }
