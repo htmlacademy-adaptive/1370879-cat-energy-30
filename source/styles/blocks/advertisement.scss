@@ -1,0 +1,19 @@
+.advertisement {
+  &__list {
+    @include clear-list;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $primary-text-color;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
+}
