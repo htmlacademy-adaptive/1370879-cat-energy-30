@@ -1,0 +1,17 @@
+.add-more {
+  background-color: #fff;
+
+  &__heading {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+  }
+
+  &__slogan {
+    font-family: $secondary-font;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey;
+  }
+}
