@@ -1,0 +1,13 @@
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $special-dark-grey;
+
+  img {
+    margin-left: auto;
+  }
+}

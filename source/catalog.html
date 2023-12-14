@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <title>Страница каталога</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
@@ -26,6 +27,9 @@
       <picture>
         <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="174" height="50">
         <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Кэт Энержи">
+      </picture>
+      <picture>
+        <img class="logo__slogan" src="images/logo-mobile-2.svg" width="101" height="18" alt="Кэт Энержи">
       </picture>
     </a>
     <nav class="main-header__nav site-navigation">
@@ -227,18 +231,18 @@
             <a class="card__button button" href="#">заказать</a>
           </div>
         </li>
-        <li class="cards__item card card--add-more">
-          <div class="card__box">
-            <h3 class="card__heading">Показать еще 100500 товаров</h3>
-            <p class="card__slogan">На самом деле вкусов гораздо больше!</p>
+        <li class="cards__item add-more">
+          <div class="add-more__box">
+            <h3 class="add-more__heading">Показать еще 100500 товаров</h3>
+            <p class="add-more__slogan">На самом деле вкусов гораздо больше!</p>
 
-            <a class="card__button button button--show-all" href="#">показать все</a>
+            <a class="add-more__button button button--show-all" href="#">показать все</a>
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- <section class="catalog__add-goods add-goods">
+    <!-- <section class="page__additional add-goods">
       <h2 class="add-goods__title">Дополнительные товары</h2>
 
       <ul class="add-goods__list">
@@ -280,12 +284,12 @@
         <h2 class="visually-hidden">Секция для заказа подарков</h2>
 
         <p class="gift__slogan">Закажите все и получите чехол для кота в подарок!</p>
-      </section>
-    </section> -->
+      </section> -->
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="contacts contacts--secondary">
+    <div class="footer__contacts contacts contacts--secondary">
       <h2 class="visually-hidden">Контакты</h2>
 
       <div class="contacts__col-text">
@@ -298,7 +302,7 @@
       </div>
 
       <div class="contacts__col-map map">
-        <img class="map__image" src="images/map.jpg" width="320" height="362"
+        <img class="map__image" src="images/map@1x.jpg" width="320" height="362"
           alt="Карта с указанием положения магазина на ней">
       </div>
     </div>

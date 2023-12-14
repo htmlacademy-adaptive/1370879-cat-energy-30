@@ -1,0 +1,26 @@
+.add-card__heading {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.add-card__list {
+  margin: 0;
+}
+
+.add-card__term {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}
+
+.add-card__definition {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}
