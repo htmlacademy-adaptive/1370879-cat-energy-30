@@ -1,0 +1,7 @@
+.catalog {
+  background-color: purple;
+
+  &__list {
+    @include clear-list;
+  }
+}
