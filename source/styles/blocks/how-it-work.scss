@@ -1,18 +1,20 @@
 .how-it-work {
-  &__title {
-    font-size: 36px;
-    line-height: 40px;
-    color: $primary-text-color;
-  }
+  background-color: tomato;
+}
 
-  &__list {
-    @include clear-list;
-  }
+.how-it-work__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $primary-text-color;
+}
 
-  &__text {
-    font-family: $secondary-font;
-    font-size: 14px;
-    line-height: 18px;
-    color: $special-dark-grey;
-  }
+.how-it-work__list {
+  @include clear-list;
+}
+
+.how-it-work__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
 }

@@ -1,16 +1,14 @@
-.card-info {
-  &__term {
-    font-family: $secondary-font;
-    font-size: 16px;
-    line-height: 20px;
-    color: $special-dark-grey;
-  }
+.card-info__term {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
 
-  &__definition {
-    margin: 0;
-    font-family:  $secondary-font;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special-dark-grey;
-  }
+.card-info__definition {
+  margin: 0;
+  font-family:  $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
 }

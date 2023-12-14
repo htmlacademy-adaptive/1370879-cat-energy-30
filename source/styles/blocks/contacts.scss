@@ -1,24 +1,22 @@
-.contacts {
-  &__col-text {
-    display: flex;
-    padding: 20px;
-  }
+.contacts__col-text {
+  display: flex;
+  padding: 20px;
+}
 
-  &__heading {
-    width: 50%;
-    margin: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $secondary-text-color;
-  }
+.contacts__heading {
+  width: 50%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
 
-  &__address {
-    width: 50%;
-    font-style: normal;
-    font-family: $secondary-font;
-    font-size: 14px;
-    line-height: 20px;
-    color: $special-dark-grey;
-  }
+.contacts__address {
+  width: 50%;
+  font-style: normal;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special-dark-grey;
 }

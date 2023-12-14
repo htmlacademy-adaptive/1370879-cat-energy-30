@@ -1,18 +1,18 @@
 .example-stats {
   margin: 0;
+}
 
-  &__term {
-    font-family: $secondary-font;
-    font-size: 24px;
-    line-height: 24px;
-    color: $primary-text-color;
-  }
+.example-stats__term {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $primary-text-color;
+}
 
-  &__definition {
-    margin: 0;
-    font-family: $secondary-font;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special-dark-grey;
-  }
+.example-stats__definition {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
 }

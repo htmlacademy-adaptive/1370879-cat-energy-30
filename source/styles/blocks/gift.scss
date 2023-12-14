@@ -1,9 +1,10 @@
 .gift {
   background-color: tomato;
-  &__slogan {
-    font-family: $secondary-font;
-    font-size: 16px;
-    line-height: 20px;
-    color: $basic-white;
-  }
+}
+
+.gift__slogan {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
 }
