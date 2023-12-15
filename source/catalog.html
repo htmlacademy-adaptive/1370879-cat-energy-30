@@ -242,11 +242,11 @@
       </ul>
     </section>
 
-    <!-- <section class="page__additional add-goods">
-      <h2 class="add-goods__title">Дополнительные товары</h2>
+    <section class="complementary-goods">
+      <h2 class="complementary-goods__title">Дополнительные товары</h2>
 
-      <ul class="add-goods__list">
-        <li class="add-goods__item add-card">
+      <ul class="complementary-goods__list">
+        <li class="complementary-goods__item add-card">
           <h3 class="add-card__heading">Сахарозаменитель</h3>
           <dl class="add-card__list">
             <dt class="add-card__term">1 упаковка (100 г)</dt>
@@ -254,7 +254,7 @@
           </dl>
           <a class="add-card__button button" href="#">заказать</a>
         </li>
-        <li class="add-goods__item add-card">
+        <li class="complementary-goods__item add-card">
           <h3 class="add-card__heading">питьевая вода</h3>
           <dl class="add-card__list">
             <dt class="add-card__term">5 литров</dt>
@@ -262,7 +262,7 @@
           </dl>
           <a class="add-card__button button" href="#">заказать</a>
         </li>
-        <li class="add-goods__item add-card">
+        <li class="complementary-goods__item add-card">
           <h3 class="add-card__heading">молоко</h3>
           <dl class="add-card__list">
             <dt class="add-card__term">1 литр</dt>
@@ -270,7 +270,7 @@
           </dl>
           <a class="add-card__button button" href="#">заказать</a>
         </li>
-        <li class="add-goods__item add-card">
+        <li class="complementary-goods__item add-card">
           <h3 class="add-card__heading">витамины</h3>
           <dl class="add-card__list">
             <dt class="add-card__term">1 упаковка (30 г)</dt>
@@ -280,11 +280,11 @@
         </li>
       </ul>
 
-      <section class="add-goods__gift gift">
+      <section class="complementary-goods__gift gift">
         <h2 class="visually-hidden">Секция для заказа подарков</h2>
 
         <p class="gift__slogan">Закажите все и получите чехол для кота в подарок!</p>
-      </section> -->
+      </section>
     </section>
   </main>
 
@@ -302,8 +302,12 @@
       </div>
 
       <div class="contacts__col-map map">
-        <img class="map__image" src="images/map@1x.jpg" width="320" height="362"
-          alt="Карта с указанием положения магазина на ней">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/jpg" srcset="images/map-desktop@1x.jpg 1x" srcset="images/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 768px)" type="image/jpg" srcset="images/map-tablet@1x.jpg 1x" srcset="images/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="map__image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="362"
+            alt="Карта с указанием положения магазина на ней">
+        </picture>
       </div>
     </div>
 
