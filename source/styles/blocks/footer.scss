@@ -1,13 +1,33 @@
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-footer;
+}
+
+.footer__socials {
+  min-width: 280px;
+  padding-bottom: 20px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .footer__copyright {
   display: flex;
   align-items: center;
+  gap: 140px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: $special-dark-grey;
-
-  img {
-    margin-left: auto;
-  }
 }
+

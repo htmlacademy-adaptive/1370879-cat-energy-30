@@ -21,7 +21,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="page__main-header main-header">
+    <header class="page__main-header main-header container">
       <a class="main-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="174" height="50">
@@ -162,7 +162,7 @@
       <div class="footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <div class="contacts__col-text">
+        <div class="contacts__col-text container">
           <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">
             ул. Большая
@@ -185,33 +185,35 @@
         </div>
       </div>
 
-      <a class="footer__logo" href="#" aria-label="social-link">
-        <img src="images/footer-logo.svg" width="128" height="24" alt="Кэт Энержи">
-      </a>
+      <div class="footer__bottom container">
+        <a class="footer__logo" href="#" aria-label="social-link">
+          <img src="images/footer-logo.svg" width="128" height="24" alt="Кэт Энержи">
+        </a>
 
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="#" aria-label="social-link">
-            <img src="images/vkontakte.svg" width="27" height="17" alt="Логотип vkontakte">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--youtube" href="#" aria-label="social-link">
-            <img src="images/youtube.svg" width="24" height="19" alt="Логотип Youtube">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--telegram" href="#" aria-label="social-link">
-            <img src="images/telegram.svg" width="20" height="17" alt="Логотип Telegram">
-          </a>
-        </li>
-      </ul>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="#" aria-label="social-link">
+              <img src="images/vkontakte.svg" width="27" height="17" alt="Логотип vkontakte">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#" aria-label="social-link">
+              <img src="images/youtube.svg" width="24" height="19" alt="Логотип Youtube">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="#" aria-label="social-link">
+              <img src="images/telegram.svg" width="20" height="17" alt="Логотип Telegram">
+            </a>
+          </li>
+        </ul>
 
-      <a class="footer__copyright" href="#" aria-label="to-home-page">
-        HTML Academy
+        <a class="footer__copyright" href="#" aria-label="to-home-page">
+          HTML Academy
 
-        <img src="images/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML ACADEMY">
-      </a>
+          <img src="images/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML ACADEMY">
+        </a>
+      </div>
     </footer>
 
   </body>
