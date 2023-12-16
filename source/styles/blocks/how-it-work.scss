@@ -17,6 +17,7 @@
 
 .how-it-work__list-item {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";

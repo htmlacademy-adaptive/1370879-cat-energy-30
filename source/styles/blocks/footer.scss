@@ -4,11 +4,22 @@
   min-width: 280px;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-footer;
+
+  @media (min-width: $tablet) {
+    min-width: initial;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .footer__socials {
   min-width: 280px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    min-width: initial;
+    padding-bottom: 0;
+  }
 }
 
 .footer__bottom {
@@ -18,6 +29,13 @@
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: initial;
+  }
 }
 
 .footer__copyright {
@@ -29,4 +47,8 @@
   line-height: 20px;
   text-decoration: none;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    gap: 23px;
+  }
 }

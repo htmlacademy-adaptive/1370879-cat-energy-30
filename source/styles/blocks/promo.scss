@@ -37,3 +37,9 @@
   text-align: center;
   color: $basic-white;
 }
+
+.promo__image {
+  @media (min-width: $tablet) {
+    max-width: 708px;
+  }
+}

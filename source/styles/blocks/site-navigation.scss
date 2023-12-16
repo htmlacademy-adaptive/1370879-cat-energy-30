@@ -14,17 +14,56 @@
   background-image: url("../../images/burger.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .site-navigation__list {
   @include clear-list;
   display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 33px;
+  }
+}
+
+.site-navigation__item {
+  &--current {
+    padding-bottom: 10px;
+
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
 }
 
 .site-navigation__link {
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $primary-text-color;
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+
+  &:hover {
+    @media (min-width: $tablet) {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $tablet) {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet) {
+      opacity: 0.3;
+    }
+  }
 }

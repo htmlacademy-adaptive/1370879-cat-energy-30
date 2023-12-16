@@ -2,6 +2,12 @@
   display: flex;
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
 }
 
 .contacts__heading {
@@ -11,6 +17,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet) {
+    width: 30%;
+  }
 }
 
 .contacts__address {
@@ -20,4 +30,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    width: 30%;
+  }
 }
