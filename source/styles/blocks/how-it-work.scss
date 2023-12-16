@@ -1,4 +1,6 @@
 .how-it-work__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
   color: $primary-text-color;
@@ -6,9 +8,28 @@
 
 .how-it-work__list {
   @include clear-list;
+  padding-left: 80px;
+}
+
+.how-it-work__list-item {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+  }
+}
+
+.how-it-work__list-item:not(:last-child) {
+  margin-bottom: 26px;
 }
 
 .how-it-work__text {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;

@@ -1,9 +1,15 @@
 .button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 63px;
+  padding-right: 63px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
+  background-color: $basic-green;
 
   &--show-all {
     font-size: 16px;

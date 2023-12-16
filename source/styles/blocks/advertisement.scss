@@ -2,7 +2,27 @@
   @include clear-list;
 }
 
-.advertisement__title {
+.advertisement__item {
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: $basic-grey;
+}
+
+.advertisement__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advertisement__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.advertisement__heading {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -11,6 +31,8 @@
 
 
 .advertisement__description {
+  margin: 0;
+  margin-bottom: 38px;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
