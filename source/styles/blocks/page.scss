@@ -16,6 +16,10 @@
 
 .page__advertisement {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
 }
 
 .page__how-it-work {

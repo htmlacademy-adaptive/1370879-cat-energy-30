@@ -1,5 +1,9 @@
 .how-it-work {
   padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    border-bottom: 2px solid $border-input-1;
+  }
 }
 
 .how-it-work__title {
@@ -8,32 +12,53 @@
   font-size: 36px;
   line-height: 40px;
   color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 64px;
+  }
 }
 
 .how-it-work__list {
   @include clear-list;
-  padding-left: 80px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(230px, 250px));
+    grid-template-rows: auto auto;
+    column-gap: 153px;
+    row-gap: 37px;
+    padding-left: 0;
+  }
 }
 
 .how-it-work__list-item {
-  position: relative;
+  display: flex;
+  gap: 20px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -80px;
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    gap: 31px;
   }
 }
 
 .how-it-work__list-item:not(:last-child) {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.how-it-work__block {
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
 }
 
 .how-it-work__text {
+  max-width: 195px;
   margin: 0;
   font-family: $secondary-font;
   font-size: 14px;

@@ -11,10 +11,24 @@
   color: $basic-white;
   background-color: $basic-green;
 
+  &--small {
+    display: none;
+  }
+
   &--show-all {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: $special-dark-grey;
+  }
+
+  @media (min-width: $tablet) {
+    &--small {
+      display: block;
+      max-width: 204px;
+      padding: 14px 18px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 }
