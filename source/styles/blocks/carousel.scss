@@ -1,0 +1,16 @@
+.carousel {
+  &--small {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--standard {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      min-height: 462px;
+    }
+  }
+}

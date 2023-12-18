@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 45px;
+    padding-bottom: 0;
     background-color: $basic-white;
   }
 }
@@ -38,11 +39,22 @@
   }
 }
 
+.example__wrap {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
 .example__list {
   display: flex;
   gap: 32px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    gap: 43px;
+    margin-bottom: 99px;
+  }
 }
 
 .example__expenses {
@@ -53,4 +65,21 @@
   text-transform: uppercase;
   text-align: center;
   color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    max-width: 174px;
+    margin-left: auto;;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+.example__carousel {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-grey;
+  }
 }

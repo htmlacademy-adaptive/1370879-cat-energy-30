@@ -149,28 +149,44 @@
             тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
 
-          <dl class="example__list example-stats">
-            <div class="example-stats__col">
-              <dt class="example-stats__term">5 <span>кг</span></dt>
-              <dd class="example-stats__definition">снижение веса</dd>
-            </div>
+          <div class="example__wrap">
+            <dl class="example__list example-stats">
+              <div class="example-stats__col">
+                <dt class="example-stats__term">5 <span>кг</span></dt>
+                <dd class="example-stats__definition">снижение веса</dd>
+              </div>
 
-            <div class="example-stats__col">
-              <dt class="example-stats__term">60 <span>дней</span></dt>
-              <dd class="example-stats__definition">затрачено времени</dd>
-            </div>
-          </dl>
+              <div class="example-stats__col">
+                <dt class="example-stats__term">60 <span>дней</span></dt>
+                <dd class="example-stats__definition">затрачено времени</dd>
+              </div>
+            </dl>
 
-          <p class="example__expenses">Затраты на питание: <span>15 000 РУБ</span>.</p>
+            <p class="example__expenses">Затраты на питание: <span>15 000 РУБ</span>.</p>
+          </div>
 
-          <div class="example__carousel carousel">
+          <div class="example__carousel carousel carousel--small">
             <picture>
+              <source type="image/webp" srcset="images/slider-tablet@1x.webp 1x, images/slider-tablet@2x.webp 2x">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/slider-tablet@1x.png 1x, images/slider-tablet@2x.png 2x" width="560" height="512">
               <img class="carousel__image" src="images/slides@1x.png" srcset="images/slides@2x.png 2x" width="280" height="256"
                 alt="Изображение кота в состоянии до и после скидывание веса">
             </picture>
             <div class="carousel__control control">
               <div class="control"></div>
             </div>
+          </div>
+        </div>
+        <div class="example__carousel carousel carousel--standard">
+          <picture>
+            <source type="image/webp" srcset="images/slider-tablet@1x.webp 1x, images/slider-tablet@2x.webp 2x">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/slider-tablet@1x.png 1x, images/slider-tablet@2x.png 2x" width="560" height="512">
+            <img class="carousel__image" src="images/slides@1x.png" srcset="images/slides@2x.png 2x" width="280" height="256"
+              alt="Изображение кота в состоянии до и после скидывание веса">
+          </picture>
+          <div class="carousel__control control">
+            <div class="control"></div>
           </div>
         </div>
       </section>
