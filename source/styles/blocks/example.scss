@@ -8,6 +8,11 @@
     padding-bottom: 0;
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    background-color: $basic-grey;
+  }
 }
 
 .example__title {
@@ -81,5 +86,9 @@
     align-items: center;
     justify-content: center;
     background-color: $secondary-grey;
+  }
+
+  @media (min-width: $desktop) {
+    background: none;
   }
 }

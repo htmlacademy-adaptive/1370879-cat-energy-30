@@ -12,6 +12,10 @@
 
 .page__promo {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 82px;
+  }
 }
 
 .page__advertisement {
@@ -24,4 +28,14 @@
 
 .page__how-it-work {
   min-height: 380px;
+
+  @media (min-width: $desktop) {
+    min-height: 329px;
+  }
 }
+
+// .page__example {
+//   // @media (min-width: $desktop) {
+//   //   margin-top: -45px;
+//   // }
+// }
