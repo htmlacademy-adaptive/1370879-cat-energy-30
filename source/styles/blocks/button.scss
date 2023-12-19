@@ -6,6 +6,7 @@
   padding-right: 63px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
@@ -20,6 +21,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $special-dark-grey;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $tablet) {
