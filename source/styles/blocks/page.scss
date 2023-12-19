@@ -8,6 +8,7 @@
   margin-top: 27px;
   margin-bottom: 41px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   color: $primary-text-color;
 }
@@ -36,8 +37,6 @@
   }
 }
 
-// .page__example {
-//   // @media (min-width: $desktop) {
-//   //   margin-top: -45px;
-//   // }
-// }
+.page__catalog {
+  margin-bottom: 25px;
+}

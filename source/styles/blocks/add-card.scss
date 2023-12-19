@@ -1,5 +1,6 @@
 .add-card__heading {
   margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -7,7 +8,10 @@
 }
 
 .add-card__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .add-card__term {

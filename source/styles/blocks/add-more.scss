@@ -1,4 +1,24 @@
+.add-more__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.add-more__box-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 23px;
+  background-image: url("../../images/plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .add-more__heading {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -6,6 +26,8 @@
 }
 
 .add-more__slogan {
+  margin: 0;
+  margin-bottom: 21px;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
