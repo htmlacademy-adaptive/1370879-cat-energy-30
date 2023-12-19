@@ -11,6 +11,11 @@
   font-weight: 400;
   line-height: 36px;
   color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-top: 65px;
+    margin-bottom: 113px;
+  }
 }
 
 .page__promo {
@@ -39,4 +44,8 @@
 
 .page__catalog {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }

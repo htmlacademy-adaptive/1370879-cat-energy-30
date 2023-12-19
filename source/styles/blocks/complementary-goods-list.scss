@@ -1,5 +1,5 @@
 .complementary-goods-list {
-  background-color: tomato;
+  background-color: $basic-white;
 }
 
 .complementary-goods-list__item {
@@ -7,4 +7,13 @@
   padding-bottom: 19px;
   border-top: 1px solid $special-grey;
   border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-left: 1px solid $special-grey;
+    border-right: 1px solid $special-grey;
+  }
 }

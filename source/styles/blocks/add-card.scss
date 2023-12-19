@@ -5,6 +5,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .add-card__list {
@@ -19,6 +25,11 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .add-card__definition {

@@ -1,13 +1,15 @@
-.card__box {
-  display: flex;
-  flex-direction: column;
-}
-
 .card__wrapper {
   display: flex;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    background-color: $basic-grey;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .card__col-1 {
@@ -16,10 +18,22 @@
   justify-content: center;
   padding-left: 36px;
   padding-right: 36px;
+
+  @media (min-width: $tablet) {
+    align-items: initial;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .card__col-2 {
   width: 50%;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
 .card__heading {
@@ -30,8 +44,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $tablet) {
+    max-width: 125px;
+    text-align: center;
+  }
 }
 
 .card__list {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    max-width: 125px;
+  }
+}
+
+.card__button {
+  @media (min-width: $tablet) {
+    max-width: 124px;
+    margin: 0 auto;
+  }
 }
