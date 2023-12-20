@@ -1,5 +1,9 @@
 .complementary-goods-list {
   background-color: $basic-white;
+
+  @media (min-width: $desktop) {
+    flex: 1;
+  }
 }
 
 .complementary-goods-list__item {
@@ -15,5 +19,17 @@
     padding-right: 38px;
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
   }
 }

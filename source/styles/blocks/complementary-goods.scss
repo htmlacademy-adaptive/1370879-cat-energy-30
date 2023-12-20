@@ -16,6 +16,13 @@
   }
 }
 
+.complementary-goods__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 45px;
+  }
+}
+
 .complementary-goods__list {
   @include clear-list;
   margin-bottom: 35px;

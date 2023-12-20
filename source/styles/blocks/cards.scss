@@ -4,6 +4,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
 }
 
 .cards__item {
