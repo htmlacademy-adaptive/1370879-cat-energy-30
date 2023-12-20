@@ -1,7 +1,3 @@
-.comments {
-  background-color: aqua;
-}
-
 .comments__legend {
   display: block;
   margin: 0;
@@ -31,7 +27,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  border: none;
+  // border: none;
   border: 1px solid $border-input;
   box-sizing: border-box;
   resize: none;

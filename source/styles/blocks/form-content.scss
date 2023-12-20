@@ -18,8 +18,13 @@
   color: $primary-text-color;
 }
 
-.form-content__button  {
+.form-content__button {
   width: 100%;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    max-width: 284px;
+  }
 }
 
 .form-content__bottom {
@@ -30,14 +35,6 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     gap: 60px;
-  }
-}
-
-.form-content__button {
-  margin-bottom: 14px;
-
-  @media (min-width: $tablet) {
-    max-width: 284px;
   }
 }
 

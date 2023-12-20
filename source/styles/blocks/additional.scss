@@ -1,6 +1,4 @@
 .additional {
-  background-color: pink;
-
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
