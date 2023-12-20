@@ -1,5 +1,11 @@
 .additional {
   background-color: pink;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .additional__legend {
@@ -11,6 +17,12 @@
   font-weight: 400;
   line-height: 26px;
   color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 62px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional__wrapper {
@@ -19,6 +31,11 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 30px;
+
+  @media (min-width: $tablet) {
+    max-width: 221px;
+    min-height: 40px;
+  }
 }
 
 .additional__wrapper:not(:last-child) {

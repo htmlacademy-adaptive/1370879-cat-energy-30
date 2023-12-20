@@ -1,5 +1,10 @@
 .programm {
-  background-color: purple;
+  @media (min-width: $tablet) {
+    padding-top: 23px;
+    padding-bottom: 27px;
+    padding-left: 27px;
+    border: 1px solid $border-input;
+  }
 }
 
 .programm__wrapper {
@@ -8,6 +13,10 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 30px;
+
+  @media (min-width: $tablet) {
+    min-height: 40px;
+  }
 }
 
 .programm__wrapper:not(:last-child) {
