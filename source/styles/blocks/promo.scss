@@ -36,8 +36,7 @@
 
 .promo__col-2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .promo__col-2.container {
@@ -59,7 +58,6 @@
   @media (min-width: $tablet) {
     max-width: 420px;
     margin-bottom: 40px;
-    padding-left: 120px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -76,7 +74,6 @@
   color: $basic-white;
 
   @media (min-width: $tablet) {
-    padding-left: 120px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -93,12 +90,13 @@
 .promo__link {
   @media (min-width: $tablet) {
     position: absolute;
-    bottom: 419px;
-    left: 121px;
+    top: 313px;
+    left: 31px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    bottom: 66px;
+    top: 280px;
+    left: 278px;
   }
 }

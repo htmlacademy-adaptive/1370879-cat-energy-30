@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="page__main-header main-header container">
+    <header class="page__main-header main-header main-header--second container">
       <a class="main-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="174" height="50">
@@ -48,7 +48,7 @@
       </nav>
     </header>
 
-    <main class="page__form form">
+    <main class="page__form form container">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__slogan">
         Заполните анкету, и мы подберем программу питания для вашего кота
@@ -94,7 +94,7 @@
         </fieldset>
 
         <fieldset class="form-content__field contacts-data">
-          <legend class="form-content__legend">Контактные данные<br/>(владельца кота)</legend>
+          <legend class="contacts-data__legend">Контактные данные<br/>(владельца кота)</legend>
 
           <div class="contacts-data__wrapper">
             <label class="contacts-data__label label" for="email">E-mail: <sup>*</sup></label>
@@ -108,14 +108,14 @@
         </fieldset>
 
         <fieldset class="form-content__field comments">
-          <legend class="form-content__legend">Комментарий</legend>
+          <legend class="comments__legend">Комментарий</legend>
 
           <label class="visually-hidden" for="comments">Поле для коментариев</label>
           <textarea class="comments__textarea" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
 
         <fieldset class="form-content__field additional">
-          <legend class="form-content__legend">Дополнительно</legend>
+          <legend class="additional__legend">Дополнительно</legend>
 
           <div class="additional__wrapper">
             <label class="additional__label label" for="no-sugar">сахарозаменитель</label>
@@ -150,7 +150,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__contacts contacts">
+      <div class="footer__contacts contacts contacts--allternative">
         <h2 class="visually-hidden">Контакты</h2>
 
         <div class="contacts__col-text container">

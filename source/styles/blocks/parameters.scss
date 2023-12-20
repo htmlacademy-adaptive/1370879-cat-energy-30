@@ -1,0 +1,14 @@
+.parameters {
+  background-color: tomato;
+}
+
+.parameters__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 45px;
+}
+
+.parameters__wrapper:not(:last-child) {
+  margin-bottom: 14px;
+}

@@ -1,0 +1,33 @@
+.comments {
+  background-color: aqua;
+}
+
+.comments__legend {
+  display: block;
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: $primary-text-color;
+}
+
+.comments__textarea {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-left: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  border: none;
+  border: 1px solid $border-input;
+  box-sizing: border-box;
+  resize: none;
+}

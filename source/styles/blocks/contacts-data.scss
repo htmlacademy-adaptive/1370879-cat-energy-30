@@ -1,0 +1,16 @@
+.contacts-data {
+  background-color: greenyellow;
+}
+
+.contacts-data__legend {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $primary-text-color;
+}
+
+.contacts-data__wrapper:not(:last-child) {
+  margin-bottom: 13px;
+}

@@ -1,4 +1,7 @@
 .form-content__field {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   border: none;
   outline: none;
 }
@@ -6,6 +9,30 @@
 .form-content__legend {
   padding: 0;
   font-size: 24px;
+  font-weight: 400;
   line-height: 26px;
+  color: $primary-text-color;
+}
+
+.form-content__button  {
+  width: 100%;
+}
+
+.form-content__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-content__button {
+  margin-bottom: 14px;
+}
+
+.form-content__slogan {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   color: $primary-text-color;
 }

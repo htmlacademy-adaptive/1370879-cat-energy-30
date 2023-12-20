@@ -1,0 +1,15 @@
+.programm {
+  background-color: purple;
+}
+
+.programm__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 30px;
+}
+
+.programm__wrapper:not(:last-child) {
+  margin-bottom: 13px;
+}
