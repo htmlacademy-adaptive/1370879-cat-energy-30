@@ -4,4 +4,9 @@
   text-transform: uppercase;
   color: $primary-text-color;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

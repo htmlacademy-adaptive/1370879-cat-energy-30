@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.logo__slogan {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

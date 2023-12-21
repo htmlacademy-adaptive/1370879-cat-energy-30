@@ -1,3 +1,19 @@
 .main-header {
-  background-color: $basic-green;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  background-color: $basic-white;
+
+  &--second {
+    border-bottom: 1px solid $border-footer;
+
+    @media (min-width: $tablet) {
+      border: none;
+    }
+  }
+}
+
+.main-header__nav {
+  margin-left: auto;
 }

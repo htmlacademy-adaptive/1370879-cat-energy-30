@@ -1,0 +1,33 @@
+.cards {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $special-grey-2;
+  border-bottom: 1px solid $special-grey-2;
+
+  @media (min-width: $tablet) {
+    border: none;
+    background-color: $basic-grey;
+  }
+}
+
+.cards__item:not(:last-child) {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    // padding-bottom: 0;
+    padding-bottom: 40px;
+  }
+}

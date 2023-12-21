@@ -1,0 +1,46 @@
+.additional {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
+}
+
+.additional__legend {
+  display: block;
+  margin: 0;
+  margin-bottom: 36px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 62px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 30px;
+
+  @media (min-width: $tablet) {
+    max-width: 221px;
+    min-height: 40px;
+  }
+}
+
+.additional__wrapper:not(:last-child) {
+  margin-bottom: 13px;
+}

@@ -5,7 +5,57 @@
 
 .page__title {
   margin: 0;
+  margin-top: 27px;
+  margin-bottom: 41px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-top: 65px;
+    margin-bottom: 113px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 84px;
+  }
+}
+
+.page__promo {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 82px;
+  }
+}
+
+.page__advertisement {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+}
+
+.page__how-it-work {
+  min-height: 380px;
+
+  @media (min-width: $desktop) {
+    min-height: 329px;
+  }
+}
+
+.page__catalog {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 76px;
+  }
 }

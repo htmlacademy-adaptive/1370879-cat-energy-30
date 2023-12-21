@@ -1,0 +1,24 @@
+.programm {
+  @media (min-width: $tablet) {
+    padding-top: 23px;
+    padding-bottom: 27px;
+    padding-left: 27px;
+    border: 1px solid $border-input;
+  }
+}
+
+.programm__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 30px;
+
+  @media (min-width: $tablet) {
+    min-height: 40px;
+  }
+}
+
+.programm__wrapper:not(:last-child) {
+  margin-bottom: 13px;
+}

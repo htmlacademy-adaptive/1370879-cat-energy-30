@@ -1,3 +1,14 @@
 .socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
   @include clear-list;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-footer;
+
+  @media (min-width: $tablet) {
+    border: none;
+    padding-bottom: 0;
+  }
 }

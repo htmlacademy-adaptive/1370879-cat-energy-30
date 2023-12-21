@@ -1,13 +1,60 @@
+.add-more {
+  @media (min-width: $tablet) {
+    background-color: $basic-white;
+    border: 1px solid $basic-grey;
+  }
+}
+
+.add-more__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.add-more__box-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 23px;
+  background-image: url("../../images/plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .add-more__heading {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .add-more__slogan {
+  margin: 0;
+  margin-bottom: 21px;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 128px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
