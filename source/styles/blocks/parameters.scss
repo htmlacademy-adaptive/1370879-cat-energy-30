@@ -1,3 +1,9 @@
+.parameters {
+  @media (min-width: $desktop) {
+    flex: 1;
+  }
+}
+
 .parameters__wrapper {
   display: flex;
   align-items: center;

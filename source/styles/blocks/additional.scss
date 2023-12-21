@@ -4,6 +4,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
 }
 
 .additional__legend {

@@ -1,3 +1,10 @@
+.contacts-data__col {
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 .contacts-data__legend {
   display: block;
   margin-bottom: 35px;
@@ -22,6 +29,10 @@
   @media (min-width: $tablet) {
     min-height: 52px;
   }
+
+  @media (min-width: $desktop) {
+    width: 541px;
+  }
 }
 
 .contacts-data__wrapper:not(:last-child) {
@@ -29,5 +40,9 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
