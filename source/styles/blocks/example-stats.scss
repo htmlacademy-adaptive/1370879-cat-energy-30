@@ -1,21 +1,25 @@
 .example-stats__col {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 8px;
   width: 50%;
+  min-height: 45px;
+  padding-top: 15px;
+  border: 1px solid $special-grey;
+  border-radius: 8px;
 
   @media (min-width: $tablet) {
     width: auto;
-    gap: 11px;
     min-width: 162px;
+    min-height: 60px;
   }
 }
 
 .example-stats__term {
+  max-height: 24px;
   font-family: $secondary-font;
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   color: $primary-text-color;
 
@@ -26,16 +30,29 @@
 }
 
 .example-stats__definition {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
   max-width: 77px;
   margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $special-dark-grey;
+  background-color: $secondary-grey;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet) {
+    bottom: -7px;
+    max-width: 100%;
+    width: 135px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 14px;
     line-height: 14px;
+    background-color: $basic-white;
   }
 }

@@ -19,6 +19,7 @@
   margin: 0;
   margin-bottom: 40px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $primary-text-color;
 
@@ -34,6 +35,7 @@
   margin-bottom: 20px;
   font-family: $secondary-font;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   color: $special-dark-grey;
 
@@ -48,17 +50,21 @@
   @media (min-width: $tablet) {
     display: flex;
   }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .example__list {
   display: flex;
   gap: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet) {
     gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 181px;
   }
 }
 
@@ -66,6 +72,7 @@
   margin: 0;
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -78,17 +85,23 @@
     line-height: 20px;
     text-align: end;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    max-width: 374px;
+    margin-left: 0;
+    text-align: start;
+  }
+
+  span {
+    @media (min-width: $desktop) {
+      margin-left: auto;
+    }
+  }
 }
 
 .example__carousel {
   @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $secondary-grey;
-  }
-
-  @media (min-width: $desktop) {
-    background: none;
+    min-height: 462px;
   }
 }
