@@ -1,8 +1,9 @@
 .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: $secondary-grey;
   }
 
@@ -12,7 +13,13 @@
 }
 
 .carousel__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+
   @media (min-width: $tablet) {
+    width: 560px;
+    height: 502px;
     margin-top: -150px;
   }
 }

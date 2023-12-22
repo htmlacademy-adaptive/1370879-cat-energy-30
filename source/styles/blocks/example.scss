@@ -66,6 +66,10 @@
     gap: 43px;
     margin-bottom: 181px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__expenses {
