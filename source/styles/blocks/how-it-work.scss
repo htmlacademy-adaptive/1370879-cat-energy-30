@@ -60,63 +60,63 @@
     height: 280px;
 
     &--leaf {
-    position: relative;
+      position: relative;
+    }
 
-      &::before {
-        position: absolute;
-        content: "1";
-        top: 0;
-        right: 0;
-        font-size: 234px;
-        font-weight: 400;
-        line-height: 234px;
-        color: aqua;
-      }
+    &--leaf::before {
+      position: absolute;
+      content: "1";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      // color: aqua;
     }
 
     &--powder {
-    position: relative;
+      position: relative;
+    }
 
-      &::before {
-        position: absolute;
-        content: "2";
-        top: 0;
-        right: 0;
-        font-size: 234px;
-        font-weight: 400;
-        line-height: 234px;
-        color: aqua;
-      }
+    &--powder::before {
+      position: absolute;
+      content: "2";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      // color: aqua;
     }
 
     &--meal {
-    position: relative;
+      position: relative;
+    }
 
-      &::before {
-        position: absolute;
-        content: "3";
-        top: 0;
-        right: 0;
-        font-size: 234px;
-        font-weight: 400;
-        line-height: 234px;
-        color: aqua;
-      }
+    &--meal::before {
+      position: absolute;
+      content: "3";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      // color: aqua;
     }
 
     &--time {
-    position: relative;
+      position: relative;
+    }
 
-      &::before {
-        position: absolute;
-        content: "4";
-        top: 0;
-        right: 0;
-        font-size: 234px;
-        font-weight: 400;
-        line-height: 234px;
-        color: aqua;
-      }
+    &--time::before {
+      position: absolute;
+      content: "4";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      // color: aqua;
     }
   }
 }
