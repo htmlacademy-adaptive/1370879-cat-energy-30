@@ -18,6 +18,7 @@
   height: 256px;
 
   @media (min-width: $tablet) {
+    position: relative;
     width: 560px;
     height: 502px;
     margin-top: -150px;
