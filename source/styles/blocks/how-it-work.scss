@@ -67,11 +67,11 @@
       position: absolute;
       content: "1";
       top: 0;
-      right: 0;
+      right: 34px;
       font-size: 234px;
       font-weight: 400;
       line-height: 234px;
-      // color: aqua;
+      color: $basic-grey;
     }
 
     &--powder {
@@ -86,7 +86,7 @@
       font-size: 234px;
       font-weight: 400;
       line-height: 234px;
-      // color: aqua;
+      color: $basic-grey;
     }
 
     &--meal {
@@ -101,7 +101,7 @@
       font-size: 234px;
       font-weight: 400;
       line-height: 234px;
-      // color: aqua;
+      color: $basic-grey;
     }
 
     &--time {
@@ -116,7 +116,7 @@
       font-size: 234px;
       font-weight: 400;
       line-height: 234px;
-      // color: aqua;
+      color: $basic-grey;
     }
   }
 }
@@ -166,4 +166,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
 }
