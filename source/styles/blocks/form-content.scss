@@ -1,20 +1,28 @@
 .form-content__wrapper {
+  margin-bottom: 24px;
+
   @media (min-width: $desktop) {
     display: flex;
     gap: 80px;
-    // max-height: 196px;
   }
 }
 
 .form-content__field {
-  margin: 0;
-  margin-bottom: 25px;
   padding: 0;
   border: none;
   outline: none;
 
   @media (min-width: $tablet) {
     margin-bottom: 65px;
+  }
+}
+
+.form-content__field-wrapper {
+  border-top: 1px solid $border-footer;
+  border-bottom: 1px solid $border-footer;
+
+  @media (min-width: $tablet) {
+    border: none;
   }
 }
 

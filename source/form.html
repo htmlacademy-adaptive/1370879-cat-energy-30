@@ -48,15 +48,17 @@
       </nav>
     </header>
 
-    <main class="page__form form container">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__slogan">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+    <main class="page__form form">
+      <div class="page__form-container container">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__slogan">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
 
       <form class="form__form-content form-content" action="#">
         <div class="form-content__wrapper">
-          <fieldset class="form-content__field parameters">
+          <fieldset class="form-content__field parameters container">
             <legend class="visually-hidden">Параметры питомца</legend>
 
             <div class="parameters__wrapper">
@@ -75,27 +77,29 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-content__field programm">
-            <legend class="visually-hidden">Параметры питомца</legend>
+          <div class="form-content__field-wrapper">
+            <fieldset class="form-content__field programm container">
+              <legend class="visually-hidden">Параметры питомца</legend>
 
-            <div class="programm__wrapper">
-              <label class="programm__label label" for="weight-down">похудение</label>
-              <input class="programm__checkbox checkbox" name="weight-down" type="checkbox" id="weight-down">
-            </div>
+              <div class="programm__wrapper">
+                <label class="programm__label label" for="weight-down">похудение</label>
+                <input class="programm__checkbox checkbox" name="weight-down" type="checkbox" id="weight-down">
+              </div>
 
-            <div class="programm__wrapper">
-              <label class="programm__label label" for="weight-up">Набор массы</label>
-              <input class="programm__checkbox checkbox" name="weight-up" type="checkbox" id="weight-up">
-            </div>
+              <div class="programm__wrapper">
+                <label class="programm__label label" for="weight-up">Набор массы</label>
+                <input class="programm__checkbox checkbox" name="weight-up" type="checkbox" id="weight-up">
+              </div>
 
-            <div class="programm__wrapper">
-              <label class="programm__label label" for="no-answer">Не знаю (Нужен ваш совет)</label>
-              <input class="programm__checkbox checkbox" name="no-answer" type="checkbox" id="no-answer">
-            </div>
-          </fieldset>
+              <div class="programm__wrapper">
+                <label class="programm__label label" for="no-answer">Не знаю (Нужен ваш совет)</label>
+                <input class="programm__checkbox checkbox" name="no-answer" type="checkbox" id="no-answer">
+              </div>
+            </fieldset>
+          </div>
         </div>
 
-        <fieldset class="form-content__field contacts-data">
+        <fieldset class="form-content__field contacts-data container">
           <legend class="contacts-data__legend">Контактные данные<br/>(владельца кота)</legend>
 
           <div class="contacts-data__col">
@@ -113,14 +117,14 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-content__field comments">
+        <fieldset class="form-content__field comments container">
           <legend class="comments__legend">Комментарий</legend>
 
           <label class="visually-hidden" for="comments">Поле для коментариев</label>
           <textarea class="comments__textarea" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
 
-        <fieldset class="form-content__field additional">
+        <fieldset class="form-content__field additional container">
           <legend class="additional__legend">Дополнительно</legend>
 
           <div class="additional__wrapper">
@@ -144,7 +148,7 @@
           </div>
         </fieldset>
 
-        <div class="form-content__bottom">
+        <div class="form-content__bottom container">
           <button class="form-content__button button" type="button">отправить заявку</button>
           <p class="form-content__slogan">
             <small>
@@ -214,11 +218,6 @@
               d="M119.989 15.4212L115.082 0.408447H118.086L121.591 11.6425L124.996 0.408447H128L123.093 15.4212V23.5914H120.089V15.4212H119.989Z"
               fill="#111111" />
           </g>
-          <defs>
-            <!-- <clipPath id="clip0_100940_322">
-              <rect width="128" height="24" fill="white" />
-            </clipPath> -->
-          </defs>
         </svg>
 
         <ul class="footer__socials socials">
