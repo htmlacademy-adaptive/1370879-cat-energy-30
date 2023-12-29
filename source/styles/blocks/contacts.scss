@@ -18,19 +18,23 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 39%;
-    left: 336px;
+    left: 110px;
     background-color: $basic-white;
     transform: translateY(-50%);
-    justify-content: initial;
-    gap: 87px;
+    max-width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
   }
 }
 
 .contacts__col-text.container {
+  @media (min-width: $tablet) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   @media (min-width: $desktop) {
-    max-width: 565px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -46,13 +50,13 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet) {
-    width: 26%;
+    width: 37%;
     font-size: 20px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop) {
-    width: 22%;
+    width: 45%;
   }
 }
 
@@ -66,11 +70,20 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
     width: 30%;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop) {
-    width: 22%;
+    width: 40%;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet) {
+    margin-top: auto;
   }
 }
 
