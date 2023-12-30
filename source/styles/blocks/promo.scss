@@ -32,6 +32,7 @@
   @media (min-width: $tablet) {
     min-height: 641px;
     padding-top: 65px;
+    padding-left: 90px;
     background-image: none;
     background-color: $basic-white;
   }
@@ -43,6 +44,7 @@
 
 .promo__col-2 {
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -27%);
@@ -52,7 +54,8 @@
   }
 
   @media (min-width: $desktop) {
-    transform: translate(-26%, -71%);
+    position: static;
+    transform: translate(-5%, -16%);
   }
 }
 
@@ -60,15 +63,18 @@
   @media (min-width: $desktop) {
     max-width: initial;
     margin: 0;
-    margin-left: 20.3rem;
+    margin-left: 11.3rem;
     padding: 0;
   }
 }
 
 .promo__title {
+  position: relative;
+  z-index: 2;
   margin: 0;
   margin-bottom: 25px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: $basic-white;
@@ -76,7 +82,6 @@
   @media (min-width: $tablet) {
     max-width: 420px;
     margin-bottom: 40px;
-    padding-left: 50px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -85,15 +90,17 @@
 }
 
 .promo__slogan {
+  position: relative;
+  z-index: 2;
   margin: 0;
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
 
   @media (min-width: $tablet) {
-    padding-left: 50px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -115,12 +122,5 @@
     z-index: 100;
     max-width: 162px;
     margin-top: 20px;
-    margin-left: 50px;
   }
-
-  // @media (min-width: $desktop) {
-  //   position: absolute;
-  //   top: 280px;
-  //   left: 278px;
-  // }
 }
