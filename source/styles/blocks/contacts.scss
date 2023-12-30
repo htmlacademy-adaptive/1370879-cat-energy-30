@@ -2,6 +2,10 @@
   &--allternative {
     background-color: $basic-grey;
   }
+
+  @media (min-width: $desktop) {
+    position: relative;
+  }
 }
 
 .contacts__col-text {
@@ -18,7 +22,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 39%;
-    left: 110px;
+    left: 312px;
     background-color: $basic-white;
     transform: translateY(-50%);
     max-width: 565px;
@@ -90,4 +94,9 @@
 .contacts__col-map {
   text-align: center;
   background-color: $basic-grey;
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }

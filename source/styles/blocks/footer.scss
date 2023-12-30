@@ -1,4 +1,6 @@
 .footer {
+  background-color: $basic-grey;
+
   @media (min-width: $desktop) {
     position: relative;
   }
@@ -29,13 +31,16 @@
 }
 
 .footer__bottom {
+  background-color: $basic-grey;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet) {
     gap: 0;
