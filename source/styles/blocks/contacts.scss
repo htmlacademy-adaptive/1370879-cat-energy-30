@@ -8,7 +8,7 @@
   }
 }
 
-.contacts__col-text {
+.contacts__container {
   display: flex;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -32,7 +32,7 @@
   }
 }
 
-.contacts__col-text.container {
+.contacts__container.container {
   @media (min-width: $tablet) {
     padding-left: 70px;
     padding-right: 70px;
@@ -91,7 +91,7 @@
   }
 }
 
-.contacts__col-map {
+.contacts__map {
   text-align: center;
   background-color: $basic-grey;
 

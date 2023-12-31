@@ -48,7 +48,7 @@
   }
 }
 
-.how-it-work__list-item {
+.how-it-work__item {
   display: flex;
   gap: 20px;
 
@@ -56,8 +56,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 31px;
-    max-width: 230px;
-    height: 280px;
+    min-width: 230px;
+    min-height: 280px;
 
     &--leaf {
       position: relative;
@@ -121,7 +121,7 @@
   }
 }
 
-.how-it-work__list-item:not(:last-child) {
+.how-it-work__item:not(:last-child) {
   margin-bottom: 26px;
 
   @media (min-width: $tablet) {

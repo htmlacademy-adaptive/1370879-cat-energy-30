@@ -25,7 +25,7 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    z-index: 1;
+    z-index: 100;
     background-image: url("../../images/promo-bg-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -37,11 +37,20 @@
       content: "";
       top: 0;
       right: 0;
-      width: 720px;
+      width: 50%;
       height: 694px;
       display: flex;
       background-color: $rgba-green;
     }
+  }
+}
+
+.page__body.page__body--catalog,
+.page__body.page__body--form {
+  background-image: none;
+
+  &::before {
+    display: none;
   }
 }
 
