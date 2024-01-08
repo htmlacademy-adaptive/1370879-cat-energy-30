@@ -14,8 +14,24 @@
   }
 }
 
-.socials__link {
+.socials__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 28px;
-  height: 21px;
+  height: 22px;
+
+  &:hover,
+  &:focus {
+    svg path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $basic-green;
+      opacity: 0.3;
+    }
+  }
 }
