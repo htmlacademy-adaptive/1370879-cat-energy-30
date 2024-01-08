@@ -43,29 +43,87 @@
 }
 
 .advertisement__box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
+  &--diet::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../images/cat-back.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--weight-gain::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -9px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../images/cat-back-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   @media (min-width: $tablet) {
     max-width: 340px;
+
+    &--diet::before {
+      top: 0;
+      left: 367px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--weight-gain::before {
+      top: 0;
+      left: 376px;
+      width: 268px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop) {
     max-width: 457px;
+
+    &--diet::before {
+      top: -21px;
+      left: 0;
+      width: 100px;
+      height: 106px;
+    }
+
+    &--weight-gain::before {
+      top: -21px;
+      left: -20px;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
 .advertisement__heading {
   margin: 0;
   margin-bottom: 29px;
+  padding-left: 70px;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
     margin-bottom: 24px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -82,6 +140,7 @@
   margin-bottom: 38px;
   font-family: $secondary-font;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   color: $special-dark-grey;
 

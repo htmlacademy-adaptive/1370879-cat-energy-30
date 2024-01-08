@@ -1,4 +1,6 @@
 .footer {
+  background-color: $basic-grey;
+
   @media (min-width: $desktop) {
     position: relative;
   }
@@ -10,6 +12,15 @@
   min-width: 280px;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-footer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet) {
     min-width: initial;
@@ -29,13 +40,16 @@
 }
 
 .footer__bottom {
+  background-color: $basic-grey;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet) {
     gap: 0;
@@ -54,6 +68,22 @@
   line-height: 20px;
   text-decoration: none;
   color: $special-dark-grey;
+
+  &:hover,
+  &:focus {
+    svg path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .footer__image path {
+      fill: $basic-green;
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet) {
     gap: 23px;

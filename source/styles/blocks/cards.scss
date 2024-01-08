@@ -12,10 +12,23 @@
 }
 
 .cards__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-top: 1px solid $special-grey-2;
   border-bottom: 1px solid $special-grey-2;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $tablet) {
+      max-width: initial;
+      margin: 0;
+      padding: 0;
+    }
+  }
 
   @media (min-width: $tablet) {
     border: none;
@@ -27,7 +40,6 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet) {
-    // padding-bottom: 0;
     padding-bottom: 40px;
   }
 }

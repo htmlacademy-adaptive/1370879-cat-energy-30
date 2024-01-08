@@ -1,6 +1,7 @@
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 
   @include clear-list;
@@ -10,5 +11,27 @@
   @media (min-width: $tablet) {
     border: none;
     padding-bottom: 0;
+  }
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+
+  &:hover,
+  &:focus {
+    svg path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $basic-green;
+      opacity: 0.3;
+    }
   }
 }

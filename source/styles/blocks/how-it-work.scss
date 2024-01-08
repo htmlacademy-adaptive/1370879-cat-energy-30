@@ -48,17 +48,80 @@
   }
 }
 
-.how-it-work__list-item {
+.how-it-work__item {
   display: flex;
   gap: 20px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    justify-content: center;
     gap: 31px;
+    min-width: 230px;
+    min-height: 280px;
+
+    &--leaf {
+      position: relative;
+    }
+
+    &--leaf::before {
+      position: absolute;
+      content: "1";
+      top: 0;
+      right: 34px;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      color: $basic-grey;
+    }
+
+    &--powder {
+      position: relative;
+    }
+
+    &--powder::before {
+      position: absolute;
+      content: "2";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      color: $basic-grey;
+    }
+
+    &--meal {
+      position: relative;
+    }
+
+    &--meal::before {
+      position: absolute;
+      content: "3";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      color: $basic-grey;
+    }
+
+    &--time {
+      position: relative;
+    }
+
+    &--time::before {
+      position: absolute;
+      content: "4";
+      top: 0;
+      right: 0;
+      font-size: 234px;
+      font-weight: 400;
+      line-height: 234px;
+      color: $basic-grey;
+    }
   }
 }
 
-.how-it-work__list-item:not(:last-child) {
+.how-it-work__item:not(:last-child) {
   margin-bottom: 26px;
 
   @media (min-width: $tablet) {
@@ -70,6 +133,30 @@
   width: 60px;
   height: 60px;
   background-color: $basic-green;
+
+  &--leaf {
+    background-image: url("../../images/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--powder {
+    background-image: url("../../images/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--meal {
+    background-image: url("../../images/eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--time {
+    background-image: url("../../images/eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .how-it-work__text {
@@ -79,4 +166,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
 }

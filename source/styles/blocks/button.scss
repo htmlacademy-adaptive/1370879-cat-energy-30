@@ -15,6 +15,15 @@
   background-color: $basic-green;
   border: none;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:focus,
+  &:active {
+    color: $rgba-white;
+  }
+
   &--small {
     display: none;
   }
@@ -27,6 +36,16 @@
     text-transform: uppercase;
     color: $special-dark-grey;
     background-color: $basic-grey;
+
+    &:hover {
+      background-color: $special-grey-2;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $special-grey-2;
+      opacity: 0.9;
+    }
 
     @media (min-width: $desktop) {
       width: 95px;
