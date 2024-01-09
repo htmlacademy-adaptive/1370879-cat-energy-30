@@ -15,18 +15,18 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet) {
-    padding-top: 77px;
+    padding-top: 76px;
     padding-left: 52px;
     padding-right: 63px;
-    padding-bottom: 53px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop) {
     width: 50%;
-    padding-top: 47px;
+    padding-top: 77px;
     padding-left: 52px;
     padding-right: 61px;
-    padding-bottom: 59px;
+    padding-bottom: 53px;
   }
 }
 
@@ -78,15 +78,15 @@
     max-width: 340px;
 
     &--diet::before {
-      top: 0;
-      left: 367px;
+      top: 10px;
+      left: 392px;
       width: 200px;
       height: 211px;
     }
 
     &--weight-gain::before {
-      top: 0;
-      left: 376px;
+      top: 16px;
+      left: 359px;
       width: 268px;
       height: 200px;
     }
@@ -113,6 +113,7 @@
 
 .advertisement__heading {
   margin: 0;
+  margin-top: 6px;
   margin-bottom: 29px;
   padding-left: 70px;
   font-size: 24px;
@@ -137,7 +138,7 @@
 
 .advertisement__description {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: 400;
@@ -145,7 +146,7 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }

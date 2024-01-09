@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   background-color: $basic-white;
 
   &--second {
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 25px;
+    padding-top: 29px;
     padding-bottom: 0;
   }
 
@@ -28,9 +28,16 @@
   @media (min-width: $tablet) {
     max-width: 174px;
     max-height: 50px;
+    margin-top: -13px;
   }
 }
 
 .main-header__nav {
   margin-left: auto;
+  margin-top: -6px;
+
+  @media (min-width: $tablet) {
+    margin-left: 94px;
+    margin-top: -3px;
+  }
 }

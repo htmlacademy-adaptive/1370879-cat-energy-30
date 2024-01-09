@@ -42,6 +42,10 @@
 }
 
 .example__text-wrapper {
+  @media (min-width: $tablet) {
+    margin-bottom: 74px;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: column;
@@ -103,7 +107,7 @@
   display: flex;
   gap: 32px;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet) {
     gap: 43px;
@@ -127,6 +131,7 @@
 
   @media (min-width: $tablet) {
     max-width: 174px;
+    margin-top: 9px;
     margin-left: auto;
     font-size: 20px;
     line-height: 20px;
@@ -141,6 +146,11 @@
   }
 
   span {
+    @media (min-width: $tablet) {
+      display: inline-block;
+      margin-top: 9px;
+    }
+
     @media (min-width: $desktop) {
       margin-left: auto;
     }
