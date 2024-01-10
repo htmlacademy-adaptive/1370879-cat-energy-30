@@ -40,7 +40,8 @@
 
   @media (min-width: $desktop) {
     min-height: 446px;
-    margin-left: -166px;
+    margin-top: 6px;
+    margin-left: -89px;
     padding-top: 0;
     padding-left: 0;
   }
@@ -67,6 +68,7 @@
   @media (min-width: $desktop) {
     width: 552px;
     height: 499px;
+    transform: translate(-27px, 2px);
   }
 }
 

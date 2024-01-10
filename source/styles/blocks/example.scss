@@ -24,7 +24,7 @@
   @media (min-width: $desktop) {
     display: flex;
     padding-top: 0;
-    padding-bottom: 75px;
+    padding-bottom: 0px;
     background-color: $basic-grey;
 
     &::before {
@@ -37,7 +37,7 @@
   @media (min-width: $desktop) {
     display: flex;
     gap: 224px;
-    margin-top: -131px;
+    margin-top: -136px 
   }
 }
 
@@ -91,6 +91,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
 }
 
 .example__wrap {
@@ -140,7 +144,9 @@
 
   @media (min-width: $desktop) {
     display: flex;
+    align-items: center;
     max-width: 374px;
+    margin-top: 5px;
     margin-left: 0;
     text-align: start;
   }
@@ -152,7 +158,8 @@
     }
 
     @media (min-width: $desktop) {
-      margin-left: auto;
+      margin-top: 0;
+      margin-left: 65px;
     }
   }
 }

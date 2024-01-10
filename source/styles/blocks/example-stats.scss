@@ -13,6 +13,11 @@
     min-height: 57px;
     border-radius: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 160px;
+    min-width: initial;
+  }
 }
 
 .example-stats__term {

@@ -21,13 +21,11 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 39%;
-    left: 312px;
-    background-color: $basic-white;
-    transform: translateY(-50%);
     max-width: 565px;
     padding-left: 80px;
     padding-right: 80px;
+    background-color: $basic-white;
+    transform: translate(20%, 47%);
     box-sizing: border-box;
   }
 }

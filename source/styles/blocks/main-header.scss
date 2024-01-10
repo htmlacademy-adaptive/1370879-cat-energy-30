@@ -20,7 +20,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 55px;
+    z-index: -14;
+    padding-top: 61px;
+    background-color: transparent;
   }
 }
 
@@ -29,6 +31,10 @@
     max-width: 174px;
     max-height: 50px;
     margin-top: -13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }
 
@@ -39,5 +45,9 @@
   @media (min-width: $tablet) {
     margin-left: 94px;
     margin-top: -3px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: auto;
   }
 }

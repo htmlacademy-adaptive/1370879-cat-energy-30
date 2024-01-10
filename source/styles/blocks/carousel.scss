@@ -23,4 +23,8 @@
     height: 502px;
     margin-top: -257px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: -107px;
+  }
 }

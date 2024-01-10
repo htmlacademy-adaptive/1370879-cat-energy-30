@@ -57,6 +57,11 @@
     flex-direction: initial;
     padding-top: 56px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
 }
 
 .footer__copyright {
