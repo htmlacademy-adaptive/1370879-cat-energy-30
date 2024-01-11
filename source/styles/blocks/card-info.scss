@@ -1,13 +1,30 @@
 .card-info__block {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+.card-info__block:not(:last-child) {
+  @media (min-width: $tablet) {
+    margin-bottom: 11px;
+  }
 }
 
 .card-info__term {
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 .card-info__definition {
@@ -16,4 +33,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }

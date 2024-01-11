@@ -2,7 +2,8 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 140px;
   }
 
   @media (min-width: $desktop) {
@@ -37,7 +38,7 @@
 }
 
 .cards__item:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet) {
     padding-bottom: 40px;

@@ -7,6 +7,7 @@
   background-color: $basic-white;
 
   &--second {
+    padding-bottom: 10px;
     border-bottom: 1px solid $border-footer;
 
     @media (min-width: $tablet) {
@@ -15,7 +16,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 29px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
@@ -30,7 +31,6 @@
   @media (min-width: $tablet) {
     max-width: 174px;
     max-height: 50px;
-    margin-top: -13px;
   }
 
   @media (min-width: $desktop) {

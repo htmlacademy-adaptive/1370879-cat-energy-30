@@ -60,14 +60,15 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    gap: 33px;
+    gap: 35px;
+    margin-top: 16px;
   }
 }
 
 .site-navigation__item {
   &--current {
     @media (min-width: $tablet) {
-      padding-bottom: 10px;
+      padding-bottom: 5px;
       border-bottom: 2px solid $basic-green;
     }
   }

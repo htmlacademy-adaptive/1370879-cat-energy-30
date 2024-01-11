@@ -10,7 +10,11 @@
   flex-direction: column;
   align-items: center;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    padding-top: 53px;
+  }
 }
 
 .add-more__box-image {
@@ -39,9 +43,11 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet) {
+    max-width: 170px;
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -54,8 +60,10 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
-    margin-bottom: 128px;
+    max-width: 170px;
+    margin-bottom: 80px;
     font-size: 16px;
     line-height: 18px;
+    text-align: center;
   }
 }
