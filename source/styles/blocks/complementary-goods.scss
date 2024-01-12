@@ -1,18 +1,48 @@
 .complementary-goods {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 75px;
+  }
 }
 
 .complementary-goods__title {
+  position: relative;
   margin: 0;
   margin-bottom: 36px;
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   color: $primary-text-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -44px;
+    width: 53px;
+    height: 2px;
+    background-color: $basic-green;
+    transform: translateX(-50%);
+  }
 
   @media (min-width: $tablet) {
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
+    padding-left: 41px;
+
+    &::after {
+      right: -189px;
+      width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      right: -584px;
+      width: 952px;
+    }
   }
 }
 
@@ -26,6 +56,10 @@
 .complementary-goods__list {
   @include clear-list;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .complementary-goods__gift {

@@ -6,58 +6,96 @@
   }
 }
 
+.promo__container {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.promo__container.container {
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .promo__col-1 {
   position: relative;
-  min-height: 302px;
+  display: flex;
+  flex-direction: column;
+  min-height: 451px;
   padding-top: 27px;
   background-image: url("../../images/promo-bg@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: $basic-green;
-
-  &::before {
-    position: absolute;
-    z-index: 10;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-  }
+  background-position: top center;
+  background-size: 320px 299px;
 
   @media (min-width: $tablet) {
+    min-height: 641px;
     padding-top: 65px;
+    padding-left: 90px;
     background-image: none;
     background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 446px;
+    margin-top: 6px;
+    margin-left: -89px;
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
 .promo__col-2 {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -27%);
+
+  @media (min-width: $tablet) {
+    transform: translate(-50%, -14%);
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
+    transform: translate(-5%, -16%);
+  }
 }
 
-.promo__col-2.container {
+.promo__image {
+  @media (min-width: $desktop) {
+    width: 552px;
+    height: 499px;
+    transform: translate(-27px, 2px);
+  }
+}
+
+.promo__col-1.container {
   @media (min-width: $desktop) {
     max-width: initial;
     margin: 0;
+    margin-left: 11.3rem;
     padding: 0;
   }
 }
 
 .promo__title {
+  position: relative;
+  z-index: 2;
   margin: 0;
+  margin-top: -3px;
   margin-bottom: 25px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: $basic-white;
 
   @media (min-width: $tablet) {
     max-width: 420px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -66,8 +104,11 @@
 }
 
 .promo__slogan {
+  position: relative;
+  z-index: 2;
   margin: 0;
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -81,22 +122,24 @@
   }
 }
 
-.promo__image {
+.promo__link {
+  margin-top: auto;
+
   @media (min-width: $tablet) {
-    max-width: 467px;
+    position: relative;
+    z-index: 100;
+    max-width: 201px;
+    margin-top: 49px;
   }
 }
 
-.promo__link {
+.promo__link.button {
   @media (min-width: $tablet) {
-    position: absolute;
-    top: 313px;
-    left: 31px;
-  }
-
-  @media (min-width: $desktop) {
-    position: absolute;
-    top: 280px;
-    left: 278px;
+    padding: 15px 22px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 }

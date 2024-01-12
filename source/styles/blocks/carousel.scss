@@ -1,16 +1,30 @@
 .carousel {
-  &--small {
-    @media (min-width: $tablet) {
-      display: none;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    background-color: $secondary-grey;
   }
 
-  &--standard {
-    display: none;
+  @media (min-width: $desktop) {
+    background: none;
+  }
+}
 
-    @media (min-width: $tablet) {
-      display: flex;
-      min-height: 462px;
-    }
+.carousel__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 560px;
+    height: 502px;
+    margin-top: -257px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -107px;
   }
 }

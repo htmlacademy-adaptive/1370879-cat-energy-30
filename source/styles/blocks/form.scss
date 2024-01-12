@@ -1,5 +1,17 @@
-.form {
-  padding-bottom: 32px;
+// .form {
+//   padding-bottom: 32px;
+// }
+
+.form__wrapper {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .form__title {

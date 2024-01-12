@@ -5,9 +5,12 @@ $secondary-font: "Lato", sans-serif;
 /* Colors */
 $primary-text-color: #000000;
 $secondary-text-color: #111111;
+$back-icon: #3e3e3e;
 
 $basic-white: #ffffff;
+$rgba-white: rgba(255, 255, 255, 0.3);
 $basic-green: #68b738;
+$basic-green-2: #5eaa2f;
 $rgba-green: rgba(104, 183, 56, 0.85);
 $basic-grey: #f2f2f2;
 
@@ -20,6 +23,8 @@ $special-dark-grey-2: #222222;
 $border-input-1: #e6e6e6;
 $border-input: #e7e7e7;
 $border-footer: #d9d9d9;
+
+$status-input-error: #ff8282;
 
 /* Breakpoints */
 

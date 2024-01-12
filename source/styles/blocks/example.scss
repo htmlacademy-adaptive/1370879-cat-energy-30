@@ -4,14 +4,57 @@
   background-color: $secondary-grey;
 
   @media (min-width: $tablet) {
+    position: relative;
     padding-top: 45px;
     padding-bottom: 0;
     background-color: $basic-white;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 462px;
+      background-color: $secondary-grey;
+    }
   }
 
   @media (min-width: $desktop) {
     display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: $basic-grey;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 224px;
+    margin-top: -136px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $tablet) {
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__text-block {
+  @media (min-width: $desktop) {
+    max-width: 462px;
   }
 }
 
@@ -19,6 +62,7 @@
   margin: 0;
   margin-bottom: 40px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $primary-text-color;
 
@@ -27,6 +71,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -34,6 +82,7 @@
   margin-bottom: 20px;
   font-family: $secondary-font;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   color: $special-dark-grey;
 
@@ -42,11 +91,19 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
 }
 
 .example__wrap {
   @media (min-width: $tablet) {
     display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
   }
 }
 
@@ -54,11 +111,15 @@
   display: flex;
   gap: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet) {
     gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 181px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
   }
 }
 
@@ -66,6 +127,7 @@
   margin: 0;
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -73,22 +135,37 @@
 
   @media (min-width: $tablet) {
     max-width: 174px;
+    margin-top: 9px;
     margin-left: auto;
     font-size: 20px;
     line-height: 20px;
     text-align: end;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    max-width: 374px;
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: start;
+  }
+
+  span {
+    @media (min-width: $tablet) {
+      display: inline-block;
+      margin-top: 9px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+      margin-left: 65px;
+    }
+  }
 }
 
 .example__carousel {
   @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $secondary-grey;
-  }
-
-  @media (min-width: $desktop) {
-    background: none;
+    min-height: 462px;
   }
 }

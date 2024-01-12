@@ -1,14 +1,19 @@
+.card__box {
+  width: 280px;
+}
+
 .card__wrapper {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
     background-color: $basic-grey;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 35px;
   }
 }
 
@@ -16,23 +21,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 36px;
-  padding-right: 36px;
+  width: 140px;
+  height: 107px;
 
   @media (min-width: $tablet) {
-    align-items: initial;
-    padding-left: 0;
-    padding-right: 0;
+    width: 200px;
+    height: 210px;
+    margin-top: -89px;
+    margin-bottom: 22px;
   }
 }
 
 .card__col-2 {
   width: 50%;
+  margin-left: auto;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -41,12 +49,17 @@
   margin: 0;
   margin-bottom: 14px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
 
   @media (min-width: $tablet) {
-    max-width: 125px;
+    max-width: 135px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     text-align: center;
   }
 }
@@ -55,7 +68,7 @@
   margin: 0;
 
   @media (min-width: $tablet) {
-    max-width: 125px;
+    width: 100%;
   }
 }
 

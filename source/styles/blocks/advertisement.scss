@@ -15,18 +15,18 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet) {
-    padding-top: 77px;
+    padding-top: 76px;
     padding-left: 52px;
     padding-right: 63px;
-    padding-bottom: 53px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop) {
     width: 50%;
-    padding-top: 47px;
+    padding-top: 77px;
     padding-left: 52px;
     padding-right: 61px;
-    padding-bottom: 59px;
+    padding-bottom: 65px;
   }
 }
 
@@ -43,34 +43,94 @@
 }
 
 .advertisement__box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
+  &--diet::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../images/cat-back.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--weight-gain::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -9px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../images/cat-back-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   @media (min-width: $tablet) {
     max-width: 340px;
+
+    &--diet::before {
+      top: 10px;
+      left: 392px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--weight-gain::before {
+      top: 16px;
+      left: 359px;
+      width: 268px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop) {
     max-width: 457px;
+
+    &--diet::before {
+      top: -38px;
+      left: 0;
+      width: 100px;
+      height: 106px;
+    }
+
+    &--weight-gain::before {
+      top: -32px;
+      left: -18px;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
 .advertisement__heading {
   margin: 0;
+  margin-top: 6px;
   margin-bottom: 29px;
+  padding-left: 70px;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
     margin-bottom: 24px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop) {
+    margin-top: -1px;
     margin-bottom: 73px;
     padding-left: 162px;
   }
@@ -79,19 +139,20 @@
 
 .advertisement__description {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   font-family: $secondary-font;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 }
