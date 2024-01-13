@@ -62,7 +62,7 @@
 
 .form-content__button {
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet) {
     max-width: 284px;
@@ -91,6 +91,9 @@
 
 .form-content__slogan {
   margin: 0;
+}
+
+.form-content__slogan small {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;

@@ -19,8 +19,9 @@
 }
 
 .comments__textarea {
-  width: 100%;
   display: block;
+  width: 100%;
+  max-height: 150px;
   margin: 0;
   padding: 0;
   padding-top: 14px;
@@ -31,7 +32,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  // border: none;
   border: 1px solid $border-input;
   box-sizing: border-box;
   resize: none;

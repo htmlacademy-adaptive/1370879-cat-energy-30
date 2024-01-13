@@ -1,7 +1,5 @@
 .main-header {
   position: relative;
-  display: flex;
-  align-items: center;
   padding-top: 14px;
   padding-bottom: 13px;
   background-color: $basic-white;
@@ -27,6 +25,10 @@
   }
 }
 
+.main-header__container {
+  display: flex;
+}
+
 .main-header__logo {
   @media (min-width: $tablet) {
     max-width: 174px;
@@ -40,11 +42,9 @@
 
 .main-header__nav {
   margin-left: auto;
-  margin-top: -6px;
 
   @media (min-width: $tablet) {
     margin-left: 94px;
-    margin-top: -3px;
   }
 
   @media (min-width: $desktop) {

@@ -1,5 +1,5 @@
 .additional {
-  padding-bottom: 24px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -16,7 +16,7 @@
 .additional__legend {
   display: block;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -36,6 +36,7 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 30px;
+  padding-left: 44px;
 
   @media (min-width: $tablet) {
     max-width: 221px;
@@ -44,5 +45,5 @@
 }
 
 .additional__wrapper:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }

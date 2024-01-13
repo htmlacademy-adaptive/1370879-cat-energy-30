@@ -1,5 +1,6 @@
 .site-navigation {
   display: flex;
+  align-items: center;
 }
 
 .site-navigation--closed .site-navigation__list {
@@ -56,12 +57,13 @@
 
 .site-navigation__list {
   @include clear-list;
+  flex-wrap: wrap;
   display: none;
 
   @media (min-width: $tablet) {
     display: flex;
     gap: 35px;
-    margin-top: 16px;
+    // margin-top: 16px;
   }
 }
 

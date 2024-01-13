@@ -9,7 +9,7 @@
 .parameters__wrapper {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 11px;
   min-height: 45px;
 
   @media (min-width: $tablet) {
@@ -18,7 +18,7 @@
 }
 
 .parameters__wrapper:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     margin-bottom: 20px;

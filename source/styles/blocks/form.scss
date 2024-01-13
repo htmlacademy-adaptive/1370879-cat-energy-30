@@ -1,6 +1,8 @@
-// .form {
-//   padding-bottom: 32px;
-// }
+.form__container {
+  @media (min-width: $tablet) {
+    padding-left: 69px;
+  }
+}
 
 .form__wrapper {
   margin-bottom: 32px;
@@ -32,7 +34,8 @@
 }
 
 .form__slogan {
-  margin-bottom: 39px;
+  max-width: 226px;
+  margin-bottom: 38px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
