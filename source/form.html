@@ -71,12 +71,12 @@
               </div>
 
               <div class="parameters__wrapper">
-                <label class="parameters__label label" for="weight">Вес (кг):<sup>*</sup></label>
+                <label class="parameters__label label" for="weight">Вес(кг): <sup>*</sup></label>
                 <input class="parameters__input input" name="weight" type="text" id="weight" placeholder="7">
               </div>
 
               <div class="parameters__wrapper">
-                <label class="parameters__label label" for="age">Возраст (лет):<sup>*</sup></label>
+                <label class="parameters__label label" for="age">Возраст (лет):</label>
                 <input class="parameters__input input" name="age" type="text" id="age" placeholder="7">
               </div>
             </fieldset>
@@ -104,7 +104,8 @@
           </div>
 
           <fieldset class="form-content__field contacts-data container">
-            <h3 class="contacts-data__legend">Контактные данные<br />(владельца кота)</h3>
+            <legend class="visually-hidden">Контактные данные</legend>
+            <h3 class="contacts-data__legend">Контактные данные<br /> (владельца кота)</h3>
 
             <div class="contacts-data__col">
               <div class="contacts-data__wrapper">
@@ -116,12 +117,13 @@
               <div class="contacts-data__wrapper">
                 <label class="contacts-data__label label" for="phone">Телефон: <sup>*</sup></label>
                 <input class="contacts-data__input input input--phone" name="phone" type="tel" id="phone"
-                  placeholder="8(960) 900-60-90">
+                  placeholder="8 (960) 900-60-90">
               </div>
             </div>
           </fieldset>
 
           <fieldset class="form-content__field comments container">
+            <legend class="visually-hidden">Комментарий для пользователя</legend>
             <h3 class="comments__legend">Комментарий</h3>
 
             <label class="visually-hidden" for="comments">Поле для коментариев</label>
@@ -130,6 +132,7 @@
           </fieldset>
 
           <fieldset class="form-content__field additional container">
+            <legend class="visually-hidden">Дополнительно</legend>
             <h3 class="additional__legend">Дополнительно</h3>
 
             <div class="additional__wrapper">

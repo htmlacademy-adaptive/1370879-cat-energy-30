@@ -1,5 +1,9 @@
 .contacts-data {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 15px;
+  }
 }
 
 .contacts-data__col {
@@ -19,9 +23,16 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
+    margin-top: 17px;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.contacts-data__legend br {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 
