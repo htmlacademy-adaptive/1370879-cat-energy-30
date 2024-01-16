@@ -4,6 +4,10 @@
   @media (min-width: $tablet) {
     padding-bottom: 19px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 71px;
+  }
 }
 
 .comments__legend {
@@ -19,6 +23,10 @@
     margin-bottom: 87px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 77px;
   }
 }
 

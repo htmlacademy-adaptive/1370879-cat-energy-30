@@ -21,7 +21,9 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    max-width: 565px;
+    justify-content: initial;
+    gap: 69px;
+    max-width: 562px;
     padding-left: 80px;
     padding-right: 80px;
     background-color: $basic-white;
@@ -37,8 +39,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 78px;
+    padding-right: 78px;
   }
 }
 
@@ -81,6 +83,7 @@
 
   @media (min-width: $desktop) {
     width: 40%;
+    text-align: start;
   }
 }
 

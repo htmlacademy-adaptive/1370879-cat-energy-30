@@ -63,7 +63,10 @@
   @media (min-width: $tablet) {
     display: flex;
     gap: 35px;
-    // margin-top: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 32px;
   }
 }
 
@@ -94,14 +97,6 @@
   color: $primary-text-color;
   text-decoration: none;
 
-  @media (min-width: $tablet) {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $primary-text-color;
-  }
-
   &:hover {
     @media (min-width: $tablet) {
       opacity: 0.6;
@@ -118,5 +113,18 @@
     @media (min-width: $tablet) {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
