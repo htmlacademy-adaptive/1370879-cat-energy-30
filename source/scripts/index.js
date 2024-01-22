@@ -7,6 +7,7 @@ const navToggle = document.querySelector('.site-navigation__toggle');
 navToggle.addEventListener('click', () => {
   console.log('clicked');
   if (navMain.classList.contains('site-navigation--closed')) {
+    console.log('clicked');
     navMain.classList.remove('site-navigation--closed');
     navMain.classList.add('site-navigation--opened');
   } else {
