@@ -1,15 +1,16 @@
+/* eslint-disable no-console */
 /* в этот файл добавляет скрипты*/
 
-// let a = 1;
+const navMain = document.querySelector('.site-navigation');
+const navToggle = document.querySelector('.site-navigation__toggle');
 
-// const newVariable = ++a + 20;
-
-// // eslint-disable-next-line no-console
-// console.log(newVariable);
-
-function checkThis() {
-  // eslint-disable-next-line no-console
-  console.log(this);
-}
-
-checkThis();
+navToggle.addEventListener('click', () => {
+  console.log('clicked');
+  if (navMain.classList.contains('site-navigation--closed')) {
+    navMain.classList.remove('site-navigation--closed');
+    navMain.classList.add('site-navigation--opened');
+  } else {
+    navMain.classList.add('site-navigation--closed');
+    navMain.classList.remove('site-navigation--opened');
+  }
+});

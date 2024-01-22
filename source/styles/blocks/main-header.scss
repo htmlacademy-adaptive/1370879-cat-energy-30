@@ -1,7 +1,7 @@
 .main-header {
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   background-color: $basic-white;
 
   &--second {
@@ -41,7 +41,7 @@
 }
 
 .main-header__nav {
-  margin-left: auto;
+  margin-left: 69px;
 
   @media (min-width: $tablet) {
     margin-left: 94px;

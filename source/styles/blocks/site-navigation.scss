@@ -1,6 +1,5 @@
 .site-navigation {
   display: flex;
-  align-items: center;
 }
 
 .site-navigation--closed .site-navigation__list {
@@ -14,13 +13,12 @@
 .site-navigation--opened .site-navigation__list {
   position: absolute;
   z-index: 1000;
-  bottom: -217px;
+  bottom: -198px;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 210px;
   text-align: center;
   background-color: $basic-white;
   border-top: 2px solid $border-input-1;
@@ -36,6 +34,7 @@
   width: 24px;
   height: 24px;
   margin: 0;
+  margin-top: 6px;
   padding: 0;
   border: none;
   outline: none;
@@ -81,8 +80,8 @@
 
 .site-navigation--opened .site-navigation__item {
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 
   &:not(:last-child) {
     border-bottom: 2px solid $border-input-1;
