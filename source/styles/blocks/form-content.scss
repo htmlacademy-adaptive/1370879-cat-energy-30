@@ -22,6 +22,7 @@
   @media (min-width: $desktop) {
     max-width: 1220px;
     margin: 0 auto;
+    margin-bottom: 52px;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -35,6 +36,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 46px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 // .form-content__field.container {
@@ -43,20 +48,20 @@
 //   }
 // }
 
-// .form-content__field.container:not(.form-content__wrapper .form-content__field) {
-//   @media (min-width: $tablet) {
-//     max-width: 82%;
-//     padding-left: 70px;
-//     padding-right: 70px;
-//   }
+.form-content__field.container:not(.form-content__wrapper .form-content__field) {
+  @media (min-width: $tablet) {
+    max-width: 82%;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 
-//   @media (min-width: $desktop) {
-//     max-width: 1220px;
-//     margin: 0 auto;
-//     padding-left: 110px;
-//     padding-right: 110px;
-//   }
-// }
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
 
 .form-content__field-wrapper {
   border-top: 1px solid $border-footer;
@@ -125,7 +130,7 @@
 
   @media (min-width: $desktop) {
     gap: 80px;
-    margin-top: 46px;
+    margin-top: 61px;
   }
 }
 

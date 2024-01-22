@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 104px;
+    column-gap: 80px;
   }
 }
 
@@ -47,8 +47,16 @@
     min-height: 40px;
     padding-left: 60px;
   }
+
+  @media (min-width: $desktop) {
+    min-height: 37px;
+  }
 }
 
 .additional__wrapper:not(:last-child) {
   margin-bottom: 12px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }

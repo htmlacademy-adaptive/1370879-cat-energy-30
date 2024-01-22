@@ -13,6 +13,10 @@
   color: $special-dark-grey;
   border: 1px solid $border-input;
 
+  // &--email {
+  //   width: 523px;
+  // }
+
   &:hover {
     border: 1px solid $special-grey;
   }
@@ -32,6 +36,6 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 15px;
+    padding-left: 20px;
   }
 }

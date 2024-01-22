@@ -1,8 +1,15 @@
 /* в этот файл добавляет скрипты*/
 
-let a = 1;
+// let a = 1;
 
-const newVariable = a++ + 20;
+// const newVariable = ++a + 20;
 
-// eslint-disable-next-line no-console
-console.log(newVariable);
+// // eslint-disable-next-line no-console
+// console.log(newVariable);
+
+function checkThis() {
+  // eslint-disable-next-line no-console
+  console.log(this);
+}
+
+checkThis();
