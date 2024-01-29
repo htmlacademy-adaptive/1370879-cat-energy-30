@@ -48,20 +48,20 @@
 //   }
 // }
 
-// .form-content__field.container:not(.form-content__wrapper .form-content__field) {
-//   @media (min-width: $tablet) {
-//     max-width: 82%;
-//     padding-left: 70px;
-//     padding-right: 70px;
-//   }
+.form-content__field.container:not(.form-content__wrapper .form-content__field) {
+  @media (min-width: $tablet) {
+    max-width: 82%;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 
-//   @media (min-width: $desktop) {
-//     max-width: 1220px;
-//     margin: 0 auto;
-//     padding-left: 110px;
-//     padding-right: 110px;
-//   }
-// }
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
 
 .form-content__field-wrapper {
   border-top: 1px solid $border-footer;

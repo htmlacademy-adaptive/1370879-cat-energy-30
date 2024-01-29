@@ -53,6 +53,66 @@
   }
 }
 
+.additional__label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -44px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $special-grey;
+
+    @media (min-width: $tablet) {
+      top: -8px;
+      left: -60px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.additional__checkbox:checked + .additional__label {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -44px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $special-grey;
+
+    @media (min-width: $tablet) {
+      top: -8px;
+      left: -60px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: -38px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../images/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      top: -3px;
+      left: -52px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
 .additional__wrapper:not(:last-child) {
   margin-bottom: 12px;
 
