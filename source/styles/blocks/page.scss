@@ -13,9 +13,9 @@
 
   .site-navigation__link {
     @media (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 26px;
-    color: $primary-text-color;
+      font-size: 20px;
+      line-height: 26px;
+      color: $primary-text-color;
     }
   }
 }
