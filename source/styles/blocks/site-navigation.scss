@@ -74,10 +74,14 @@
       padding-bottom: 5px;
       border-bottom: 2px solid $basic-green;
     }
+  }
+}
 
-    @media (min-width: $desktop) {
-      border-bottom: 2px solid $basic-white;
-    }
+
+.page__body--form:not(.site-navigation__item--current),
+.page__body--catalog:not(.site-navigation__item--current) {
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $basic-white;
   }
 }
 
@@ -125,9 +129,9 @@
     color: $primary-text-color;
   }
 
-  @media (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 26px;
-    color: $basic-white;
-  }
+  // @media (min-width: $desktop) {
+  //   font-size: 20px;
+  //   line-height: 26px;
+  //   color: $basic-white;
+  // }
 }
