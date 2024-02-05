@@ -14,7 +14,7 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    max-width: 82%;
+    // max-width: 82%;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -42,11 +42,12 @@
   }
 }
 
-// .form-content__field.container {
-//   @media (min-width: $desktop) {
-//     // margin: 0;
-//   }
-// }
+.form-content__field.container:not(.parameters) {
+  @media (min-width: $tablet) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
 
 // .form-content__field.container:not(.form-content__wrapper .form-content__field) {
 //   @media (min-width: $tablet) {
