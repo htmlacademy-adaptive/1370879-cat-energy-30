@@ -15,6 +15,10 @@
     padding-right: 15px;
     padding-bottom: 35px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 42px;
+  }
 }
 
 .card__col-1 {
@@ -29,6 +33,10 @@
     height: 210px;
     margin-top: -89px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 12px;
   }
 }
 
@@ -62,6 +70,10 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+  }
 }
 
 .card__list {
@@ -70,11 +82,21 @@
   @media (min-width: $tablet) {
     width: 100%;
   }
+
+  @media (min-width: $desktop) {
+    width: 79%;
+  }
 }
 
 .card__button {
   @media (min-width: $tablet) {
     max-width: 124px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 60px;
+    padding-left: 54px;
+    padding-right: 55px;
   }
 }

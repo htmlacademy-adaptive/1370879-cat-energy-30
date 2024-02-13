@@ -1,8 +1,25 @@
+/* eslint-disable no-console */
 /* в этот файл добавляет скрипты*/
+const activePage = window.location.pathname;
+const navMain = document.querySelector('.site-navigation');
+const navToggle = document.querySelector('.site-navigation__toggle');
+// const navItems = navMain.querySelectorAll('.site-navigation__item');
+const navLinks = navMain.querySelectorAll('.site-navigation__item .site-navigation__link');
 
-let a = 1;
+navToggle.addEventListener('click', () => {
+  if (navMain.classList.contains('site-navigation--closed')) {
+    navMain.classList.remove('site-navigation--closed');
+    navMain.classList.add('site-navigation--opened');
+  } else {
+    navMain.classList.add('site-navigation--closed');
+    navMain.classList.remove('site-navigation--opened');
+  }
+});
 
-const newVariable = a++ + 20;
+navLinks.forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add('site-navigation__link--current');
+  }
+});
 
-// eslint-disable-next-line no-console
-console.log(newVariable);
+console.log(navLinks);

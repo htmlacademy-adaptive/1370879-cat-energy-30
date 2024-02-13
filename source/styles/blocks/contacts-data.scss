@@ -1,5 +1,13 @@
 .contacts-data {
-  padding-bottom: 24px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 68px;
+  }
 }
 
 .contacts-data__col {
@@ -11,16 +19,24 @@
 
 .contacts-data__legend {
   display: block;
-  margin-bottom: 35px;
+  margin-top: 26px;
+  margin-bottom: 34px;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
+    margin-top: 17px;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.contacts-data__legend br {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 
@@ -35,7 +51,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 541px;
+    width: 570px;
   }
 }
 

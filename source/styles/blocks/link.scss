@@ -1,32 +1,13 @@
 .link {
-  position: relative;
   display: flex;
   align-items: center;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $primary-text-color;
-  text-decoration: none;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: -6px;
-    width: 23px;
-    height: 23px;
-    background-image: url("../../images/arrow.svg");
-    background-repeat: no-repeat;
-    transform: translate(143%, -19%);
-    // Need to think how implement this icon better
-
-    @media (min-width: $desktop) {
-      right: -15px;
-    }
-  }
+  gap: 15px;
 
   @media (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 20px;
+    gap: 25px;
   }
 }
+
+// .link__text {
+
+// }

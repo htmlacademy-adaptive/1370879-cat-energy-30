@@ -21,11 +21,13 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    max-width: 565px;
+    justify-content: initial;
+    gap: 69px;
+    max-width: 562px;
     padding-left: 80px;
     padding-right: 80px;
     background-color: $basic-white;
-    transform: translate(20%, 47%);
+    transform: translate(0, 47%);
     box-sizing: border-box;
   }
 }
@@ -37,8 +39,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 78px;
+    padding-right: 78px;
   }
 }
 
@@ -76,10 +78,12 @@
     flex-direction: column;
     width: 30%;
     font-size: 16px;
+    text-align: end;
   }
 
   @media (min-width: $desktop) {
     width: 40%;
+    text-align: start;
   }
 }
 

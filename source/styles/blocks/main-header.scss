@@ -1,13 +1,12 @@
 .main-header {
   position: relative;
   display: flex;
-  align-items: center;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   background-color: $basic-white;
 
   &--second {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 1px solid $border-footer;
 
     @media (min-width: $tablet) {
@@ -16,14 +15,27 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 25px;
+    padding-top: 32px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    z-index: -14;
     padding-top: 61px;
     background-color: transparent;
+  }
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  max-height: 38px;
+
+  @media (min-width: $tablet) {
+    max-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    max-height: 59px;
   }
 }
 
@@ -39,15 +51,15 @@
 }
 
 .main-header__nav {
-  margin-left: auto;
-  margin-top: -6px;
+  max-height: 24px;
+  margin-left: 65px;
 
   @media (min-width: $tablet) {
     margin-left: 94px;
-    margin-top: -3px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: auto;
+    margin-top: 6px;
+    margin-left: 563px;
   }
 }

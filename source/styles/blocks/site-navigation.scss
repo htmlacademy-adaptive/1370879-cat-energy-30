@@ -13,13 +13,12 @@
 .site-navigation--opened .site-navigation__list {
   position: absolute;
   z-index: 1000;
-  bottom: -217px;
+  bottom: -198px;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 210px;
   text-align: center;
   background-color: $basic-white;
   border-top: 2px solid $border-input-1;
@@ -56,28 +55,23 @@
 
 .site-navigation__list {
   @include clear-list;
+  flex-wrap: wrap;
   display: none;
 
   @media (min-width: $tablet) {
     display: flex;
     gap: 35px;
-    margin-top: 16px;
   }
-}
 
-.site-navigation__item {
-  &--current {
-    @media (min-width: $tablet) {
-      padding-bottom: 5px;
-      border-bottom: 2px solid $basic-green;
-    }
+  @media (min-width: $desktop) {
+    gap: 32px;
   }
 }
 
 .site-navigation--opened .site-navigation__item {
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 
   &:not(:last-child) {
     border-bottom: 2px solid $border-input-1;
@@ -91,14 +85,6 @@
   text-transform: uppercase;
   color: $primary-text-color;
   text-decoration: none;
-
-  @media (min-width: $tablet) {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $primary-text-color;
-  }
 
   &:hover {
     @media (min-width: $tablet) {
@@ -116,5 +102,13 @@
     @media (min-width: $tablet) {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-text-color;
   }
 }
