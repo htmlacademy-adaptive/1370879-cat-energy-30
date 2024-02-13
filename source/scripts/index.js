@@ -3,12 +3,8 @@
 const activePage = window.location.pathname;
 const navMain = document.querySelector('.site-navigation');
 const navToggle = document.querySelector('.site-navigation__toggle');
-
-const navLinks = navMain.querySelectorAll('.site-navigation__item').forEach((link) => {
-  console.log(this, link);
-
-  // Выяснить почему контекс равен undefined
-});
+// const navItems = navMain.querySelectorAll('.site-navigation__item');
+const navLinks = navMain.querySelectorAll('.site-navigation__item .site-navigation__link');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('site-navigation--closed')) {
@@ -20,6 +16,10 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-console.dir(activePage);
+navLinks.forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add('site-navigation__link--current');
+  }
+});
 
 console.log(navLinks);

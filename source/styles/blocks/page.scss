@@ -3,6 +3,20 @@
   grid-template-rows: auto 1fr auto;
 }
 
+.page__body .site-navigation__link {
+  &--current {
+    @media (min-width: $desktop) {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $basic-white;
+    }
+  }
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+    color: $basic-white;
+  }
+}
+
 .page__body.page__body--catalog,
 .page__body.page__body--form {
   background-image: none;
@@ -12,19 +26,17 @@
   }
 
   .site-navigation__link {
+     &--current {
+      @media (min-width: $tablet) {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #68b738;
+      }
+    }
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 26px;
       color: $primary-text-color;
     }
-  }
-}
-
-.page__body .site-navigation__link {
-  @media (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 26px;
-    color: $basic-white;
   }
 }
 

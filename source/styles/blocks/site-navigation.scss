@@ -68,23 +68,6 @@
   }
 }
 
-.site-navigation__item {
-  &--current {
-    @media (min-width: $tablet) {
-      padding-bottom: 5px;
-      border-bottom: 2px solid $basic-green;
-    }
-  }
-}
-
-
-.page__body--form:not(.site-navigation__item--current),
-.page__body--catalog:not(.site-navigation__item--current) {
-  @media (min-width: $desktop) {
-    border-bottom: 2px solid $basic-white;
-  }
-}
-
 .site-navigation--opened .site-navigation__item {
   width: 100%;
   padding-top: 22px;
@@ -128,10 +111,4 @@
     text-decoration: none;
     color: $primary-text-color;
   }
-
-  // @media (min-width: $desktop) {
-  //   font-size: 20px;
-  //   line-height: 26px;
-  //   color: $basic-white;
-  // }
 }
